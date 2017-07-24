@@ -187,11 +187,11 @@ main {
 }
 
 #sign-up {
-	float: center;
 	text-align: center;
 	
 	padding: 95px 0 25px 0;
 	width: 45%;
+	margin-left:35%;
 }
 
 .sign-up-form {

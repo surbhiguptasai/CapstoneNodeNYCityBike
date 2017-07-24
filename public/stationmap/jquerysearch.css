@@ -3,14 +3,16 @@ body {
   text-align: center;
 
 }
-/*.js-search-form{
+.js-search-form{
 
     
     margin-top: 50px;
+    padding-top: 100px;
+    margin-bottom:10px;
     
   
 
-}*/
+}
 
 .js-search-results{
 

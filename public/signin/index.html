@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
   <title>NYC Bike</title>
   <meta name="description" content="My Contacts helps you to 
@@ -10,17 +10,11 @@
   <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed:400i,700i" rel="stylesheet">
   <link rel="stylesheet" type="text/css" href="../css/float-grid.css">
   <link rel="stylesheet" type="text/css" href="../css/main.css"> 
-
-  <link rel="stylesheet" type="text/css" href="jquerysearch.css">
-      <style type="text/css">
-      #map {
-        width: auto;
-        height: 500px;
-      }
-    </style>
+  <link rel="stylesheet" type="text/css" href="../css/howitworks.css"> 
 </head>
 <body>
- <div id="nav-bar-wrap">
+
+  <div id="nav-bar-wrap">
     <div id="nav-bar">
       <a href="../"><header class="site-title">NYC Bike</header></a>
       <div class="burger-container">
@@ -30,47 +24,32 @@
       <div class="nav-items-wrap">
         <div class="nav-item js-howitworks" title="How it Works"><a href="">How it Works</a></div>
 
-        <div class="nav-item js-demo" title="Station Map"><div class="nav-button" ><a href="">Station Map</a></div></div>
+        <div class="nav-item js-demo" title="Station Map"><a href="">Station Map</a></div>
         <div class="nav-item js-explorenyc" title="How it Works"><a href="">Explore NYC</a></div>
 
         <div class="nav-item js-signup" title="sign up"><a href="#sign-up">Sign up</a></div>
-        <div class="nav-item js-signin" title="sign in"><a href="#sign-in"><div >Sign in</div></a></div>
+        <div class="nav-item js-signin" title="sign in"><div class="nav-button" ><a href="#sign-in"><div >Sign in</div></a></div> </div>
       </div>
     </div>
   </div>
 
-
-
-  
-<div class="js-search-form">
-
-  <select class="stationList" >
-  <option value=""></option>
-  </select>
-
-  <select class="pinsDropDown" >
-  <option value="10">10</option>
-  <option value="20">20</option>
-  <option value="50">50</option>
-  <option value="100">100</option>
-  <option value="All">All</option>
-  </select>
-</div>
-<div id="map"></div>
-<div class="js-search-results">
- 
-</div>
-
- 
-  <script src="https://code.jquery.com/jquery-3.1.0.js"></script>
-   <script type="text/javascript" src="jquerysearch.js"></script>
-   <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDFd-29p6LxJ3sq0PIcgLFSB28vPOs9LpM&callback=initMap"></script>
-
-<script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
-   <script src="../../menu.js"></script>
+           <div id="sign-up">
+          <form class="sign-up-form" action="#">
+            <h2>Create an account</h2>
+            <label for="username">Username</label>
+            <input type="username" placeholder="your username" name="username" id="username" required>
+            <label for="password">Password</label>
+            <input type="password" name="password" id="password" required>
+            
+            <button type="submit">Login</button>
+            <div class="message-box">
+              <span class="js-message"></span>
+            </div>
+          </form>
+        </div>    
+        <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+  <script src="../../menu.js"></script>
   <script src="../../check-login-status.js"></script>
   <script src="../../sign-up.js"></script>
-
-<!--    <script type="text/javascript" src="jqueryMap.js"></script> -->
-</body>
+  </body>
 </html>

@@ -8,11 +8,11 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/4.2.0/normalize.min.css">
   <link href="https://fonts.googleapis.com/css?family=Roboto:400,700" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed:400i,700i" rel="stylesheet">
-  <link rel="stylesheet" type="text/css" href="css/float-grid.css">
-  <link rel="stylesheet" type="text/css" href="css/main.css"> 
+  <link rel="stylesheet" type="text/css" href="../css/float-grid.css">
+  <link rel="stylesheet" type="text/css" href="../css/main.css"> 
+  <link rel="stylesheet" type="text/css" href="../css/howitworks.css"> 
 </head>
 <body>
-
 
   <div id="nav-bar-wrap">
     <div id="nav-bar">
@@ -22,59 +22,174 @@
         <div class="x">&#735;</div>
       </div>
       <div class="nav-items-wrap">
-        <div class="nav-item js-howitworks " title="How it Works"><a href="">How it Works</a></div>
+        <div class="nav-item js-howitworks" title="How it Works">
+        <div class="nav-button" ><a href="">How it Works</a></div> </div>
 
         <div class="nav-item js-demo" title="Station Map"><a href="">Station Map</a></div>
         <div class="nav-item js-explorenyc" title="How it Works"><a href="">Explore NYC</a></div>
 
         <div class="nav-item js-signup" title="sign up"><a href="#sign-up">Sign up</a></div>
-        <div class="nav-item" title="sign in"><a href="#sign-in"><div class="nav-button">Sign in</div></a></div>
+        <div class="nav-item js-signin" title="sign in"><a href="#sign-in"><div >Sign in</div></a></div>
       </div>
     </div>
   </div>
-  <div class="content-wrap">
-    <main class="front-page"><img src = "../img/bgImageAddPage.jpg"><header>
-      <h1>My Contacts</h1>
-      <p>My Contacts helps you to <br/> manage your contacts.</p>
-      </header>
-    </main></div>
-  <div class="gray-back">
-    <div class="about-box content-wrap">        
-        <div id="about">
-          <h2>Now you don’t need to worry about losing contact numbers of your loved ones..</h2>
-          <p>My Contacts App enables users to easily store and find contact information, such as names, addresses and telephone numbers.</p>
-          <ol>
-            <li> <b>Add</b> your contact</li>
-            <li><b>Edit</b> your contact</li>
-            <li><b>Remove</b> your contact</li>
-            <li> <b>Get</b> your contact</li>
-            <li> <b>Download</b> your contact</li>
-          </ol>
-          <p class="center">Not ready to sign up? Try out the <a href="#" title="Demo" class="js-demo">Demo</a>.</p>
-        </div>  
-        <div id="sign-up">
-          <form class="sign-up-form" action="#">
-            <h2>Create an account</h2>
-            <label for="username">Username</label>
-            <input type="username" placeholder="your username" name="username" id="username" required>
-            <label for="password">Password</label>
-            <input type="password" name="password" id="password" required>
-            <label for="passwordConfirm">Confirm Password</label>
-            <input type="password" name="passwordConfirm" id="passwordConfirm" required>
-            <button type="submit">Create account</button>
-            <div class="message-box">
-              <span class="js-message"></span>
-            </div>
-          </form>
-        </div>    
-    </div>
-  </div>      
 
-  <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
-      
-  <script src="menu.js"></script>
-  <script src="check-login-status.js"></script>
-  <script src="sign-up.js"></script>
+     <section class="section__hero">
+        <header class="hero hero__top-level__wrap">
+            <div class="hero__image hero__image__top-level hero__max-width">
+                <picture class="picture">
+                  <!--[if IE 9]><video style="display: none;"><![endif]-->
+                  <source srcset="../img/how-it-works-hero.jpg">
+                  <!--[if IE 9]></video><![endif]-->
+                  <img itemprop="image" srcset="../img/how-it-works-hero-sm.jpg" alt="">
+                </picture>
+            </div> <!-- /.hero__image -->
+            <div class="hero__content text-align--center">
+                <div class="hero__top-level__inner padding--one-and-half spacing">
+                    <h1 class="hero__heading type-alpha--xxl text-color--alpha">Experience NYC in a whole new way</h1>
+                        <h2 class="hero__subtitle type-alpha--m">NYC Bike is the nation's largest bike share program, with 10,000 bikes and 600 stations across Manhattan, Brooklyn, Queens and Jersey City. It was designed for quick trips with convenience in mind, and it’s a fun and affordable way to get around town.</h2>
+                </div>  <!-- /.hero__top-level__inner -->
+            </div> <!-- /.hero__content -->
+        </header> <!-- /.hero__top-level__wrap -->
+    </section> <!-- /.section__hero -->
 
-</body>
+
+
+    <div class="spacing--quad">
+        <section class="section__steps-to-ride background-color--white">
+            <div class="section__content">
+                <div class="layout-container">
+                    <div class="layout-split-1-2--flex layout-extension--split-4 spacing--one-and-half flex--justify-center">
+                        <div class="column">
+                            <div class="step-block spacing">
+                                <div class="step-block__image-wrap position--relative">
+                                    <span class="step-block__image step-block__image--join flex flex--align-bottom"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 50"><title>Step 1</title><path d="M14.67,3.28A14.67,14.67,0,1,0,29.35,18,14.67,14.67,0,0,0,14.67,3.28ZM16.14,25.2h-2.9V14.06h-2.3v-2.3a5.85,5.85,0,0,0,1-.08,2.92,2.92,0,0,0,.83-0.27,2.09,2.09,0,0,0,.64-0.5,2.17,2.17,0,0,0,.42-0.77h2.32V25.2Z" class="fill-color--alpha"/><path d="M64.86,19.46H27.23a3.43,3.43,0,0,0-3.39,3.43V44.21a3.43,3.43,0,0,0,3.42,3.42H64.89a3.43,3.43,0,0,0,3.42-3.42V22.9a3.43,3.43,0,0,0-3.42-3.43h0Zm-0.49,8.93H28.24v-4H64.37v4Z" class="fill-color--beta"/></svg></span>
+                                </div> <!-- /.step-block__image-wrap -->
+                                <div class="step-block__text spacing--half">
+                                    <h2 class="step-block__heading type-alpha--xl text-color--alpha">Join</h2>
+                                    <p class="type-alpha--s longform">Become an Annual Member or buy a short-term pass.</p>
+                                    
+                                </div> <!-- /.step-block__text -->
+                            </div> <!-- /.step-block -->
+                        </div> <!-- /.column -->
+                        <div class="column">
+                            <div class="step-block spacing">
+                                <div class="step-block__image-wrap position--relative">
+                                    <span class="step-block__image step-block__image--join flex flex--align-bottom"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 50"><title>Step 2</title><path d="M14.67,3.28A14.67,14.67,0,1,0,29.35,18,14.67,14.67,0,0,0,14.67,3.28ZM19.85,25H9.42a9.73,9.73,0,0,1,.41-3A8.21,8.21,0,0,1,11,19.74,8.49,8.49,0,0,1,12.63,18a14.51,14.51,0,0,1,2-1.34q0.41-.22.8-0.46a4,4,0,0,0,.69-0.54A2.52,2.52,0,0,0,16.64,15a1.72,1.72,0,0,0,.18-0.8,1.63,1.63,0,0,0-.54-1.3,2.1,2.1,0,0,0-1.43-.47,2.69,2.69,0,0,0-1.59.45,3.13,3.13,0,0,0-1,1.25l-2.6-1.19a5.17,5.17,0,0,1,.85-1.36,5.52,5.52,0,0,1,1.19-1,5.45,5.45,0,0,1,1.45-.65,6,6,0,0,1,1.65-.23,5.84,5.84,0,0,1,2.08.35,4.56,4.56,0,0,1,1.54.95,4.08,4.08,0,0,1,1,1.41,4.55,4.55,0,0,1,.34,1.75,5,5,0,0,1-.28,1.78,4.2,4.2,0,0,1-.79,1.31,5.92,5.92,0,0,1-1.21,1q-0.7.46-1.54,0.92a9.68,9.68,0,0,0-2,1.38,4,4,0,0,0-1.08,1.65h7V25Z" class="fill-color--alpha"/><polygon points="15.36 29.12 10.92 37.52 15.36 45.93 19.17 45.93 14.74 37.52 19.17 29.12 15.36 29.12" class="fill-color--beta"/><path d="M71.51,26.71L69.7,21.15l0.31,0a3.33,3.33,0,0,0,3.32-3.32V12.11a0.76,0.76,0,0,0-1.53,0v5.73a1.79,1.79,0,0,1-2.67,1.56l-2.45-7.53a4,4,0,0,0-3.73-2.61h-2.4v3.06h2.4a0.92,0.92,0,0,1,.86.58l1.93,5.93-10,16.62,0,0a1.31,1.31,0,0,1-1.17.72H50L45,20.82a25.27,25.27,0,0,0,3.58-.51V17.46H37.81v2.86a25.31,25.31,0,0,0,4,.53L42.47,23h-2a2.41,2.41,0,0,0-2.05,1.16L36.7,27a11,11,0,1,0,7.67,12.28h2.33A2.84,2.84,0,0,0,49,41.9l0.7,2.24H47.84v1.78a15.95,15.95,0,0,0,6.71,0V44.14H51.88L51.05,41.5a2.84,2.84,0,0,0,1.3-2.21h2.2A4.35,4.35,0,0,0,58.43,37L67,22.69l1.62,5a11,11,0,0,0,8.62,20.11V44.42a7.9,7.9,0,0,1-7.66-13.81l1.66,5.09a2.84,2.84,0,1,0,2.91-.95l-1.66-5.09a7.81,7.81,0,0,1,4.75.92V27.24A10.83,10.83,0,0,0,71.51,26.71Zm-38,18.69A7.9,7.9,0,1,1,35,29.75l-3.56,5.93a2.38,2.38,0,0,0,2,3.6h7.72A7.91,7.91,0,0,1,33.55,45.4Zm1.17-9.17,3.19-5.31a7.92,7.92,0,0,1,3.43,5.31H34.72Zm9.71,0a11,11,0,0,0-4.94-7.93L40.86,26h2.6l3.35,10.22H44.43Z" class="fill-color--beta"/><polygon points="80.81 24.37 80.81 50 87.31 50 87.31 25.16 80.81 24.37" class="fill-color--beta"/></svg></span>
+                                </div> <!-- /.step-block__image-wrap -->
+                                <div class="step-block__text spacing--half">
+                                    <h2 class="step-block__heading type-alpha--xl text-color--alpha">Unlock</h2>
+                                    <p class="type-alpha--s longform">Find an available bike nearby, and get a ride code or use your member key to unlock it.</p>
+                                 
+                                </div> <!-- /.step-block__text -->
+                            </div> <!-- /.step-block -->
+                        </div> <!-- /.column -->
+                        <div class="column">
+                            <div class="step-block spacing">
+                                <div class="step-block__image-wrap position--relative">
+                                    <span class="step-block__image step-block__image--join flex flex--align-bottom"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 73"><title>Step 3</title><path d="M14.67,26.28A14.67,14.67,0,1,0,29.35,41,14.67,14.67,0,0,0,14.67,26.28Zm4.74,19.48a4.09,4.09,0,0,1-1.08,1.47,4.77,4.77,0,0,1-1.67.91,6.93,6.93,0,0,1-2.15.32,6.2,6.2,0,0,1-1.79-.25A5.26,5.26,0,0,1,10,46.4a6.21,6.21,0,0,1-.85-1.46l2.63-1.06a3.88,3.88,0,0,0,.57.86,2.93,2.93,0,0,0,.67.57,2.65,2.65,0,0,0,.75.31,3.32,3.32,0,0,0,.79.09,3,3,0,0,0,.92-0.13,2.18,2.18,0,0,0,.72-0.38,1.71,1.71,0,0,0,.47-0.6,1.91,1.91,0,0,0,.17-0.82A2.28,2.28,0,0,0,16.75,43a1.61,1.61,0,0,0-.41-0.63,2,2,0,0,0-.73-0.43,3.13,3.13,0,0,0-1.05-.16H13.1V39h1.46a1.88,1.88,0,0,0,1.31-.45,1.57,1.57,0,0,0,.49-1.22,1.79,1.79,0,0,0-.12-0.66,1.52,1.52,0,0,0-.35-0.53,1.66,1.66,0,0,0-.58-0.36,2.25,2.25,0,0,0-.8-0.13A2.3,2.3,0,0,0,13.2,36a2.4,2.4,0,0,0-.49.44,3.57,3.57,0,0,0-.38.55L9.7,36a6,6,0,0,1,.8-1.28,4.91,4.91,0,0,1,2.45-1.62,5.68,5.68,0,0,1,1.62-.22,5.49,5.49,0,0,1,1.92.32,4.63,4.63,0,0,1,1.49.88,3.86,3.86,0,0,1,1,1.32,4,4,0,0,1,.34,1.65,3.6,3.6,0,0,1-1.83,3.23,3.63,3.63,0,0,1,.91.52,3.76,3.76,0,0,1,.75.78,3.7,3.7,0,0,1,.5,1,3.76,3.76,0,0,1,.18,1.19A4.91,4.91,0,0,1,19.41,45.77Z" class="fill-color--alpha"/><rect x="17.41" y="15.24" width="8.85" height="2.16" class="fill-color--beta"/><rect x="21.4" y="24.45" width="8.85" height="2.16" class="fill-color--beta"/><rect x="11.29" y="19.22" width="13.52" height="2.16" class="fill-color--beta"/><path d="M42.05,11.94a5.08,5.08,0,0,0,5.07-5.08h1.23a6.31,6.31,0,0,0-12.62,0H37A5.08,5.08,0,0,0,42.05,11.94Z" class="fill-color--beta"/><path d="M67.58,49.5a11,11,0,0,0-1.91.17l-1.82-5.58,0.31,0a3.34,3.34,0,0,0,3.33-3.33V35A0.77,0.77,0,1,0,66,35v5.74a1.8,1.8,0,0,1-2.68,1.57l-2.46-7.55a4,4,0,0,0-3.74-2.61H54.68l-7.8-17.26v0a38.38,38.38,0,0,0-9.51,0v0l-4.7,22.83,2.93,2.64H31.86v2.87a25.38,25.38,0,0,0,4,.53l0.69,2.11h-2a2.42,2.42,0,0,0-2.06,1.17L30.74,50a11,11,0,1,0,7.69,12.32h2.34a2.85,2.85,0,0,0,2.36,2.62l0.31,1v0h0l0.38,1.21H41.92v1.79a16,16,0,0,0,6.73,0V67.15H46L45.6,65.94h2.8l0.35-3.67a4.36,4.36,0,0,0,3.8-2.34l8.58-14.3,1.62,5A11,11,0,1,0,67.58,49.5Zm-40,18.91a7.92,7.92,0,1,1,1.5-15.7l-3.58,6a2.39,2.39,0,0,0,2,3.62h7.74A7.94,7.94,0,0,1,27.59,68.42Zm1.18-9.2L32,53.89a7.94,7.94,0,0,1,3.44,5.32H28.77Zm9.74,0a11,11,0,0,0-5-8L34.92,49h2.61l3.36,10.25H38.5Zm0.55-15.45,0.27,0,4.11,3.7v9.69Zm10.8,14.68,0,0a1.31,1.31,0,0,1-.79.66l1.13-11.71-6.74-9.69,2.57-13,4.71,8.92h3.94v1.53h2.4a0.92,0.92,0,0,1,.86.58l1.94,6Zm17.72,10a7.92,7.92,0,0,1-3.87-14.84l1.66,5.1a2.85,2.85,0,1,0,2.92-.95l-1.66-5.11a7.8,7.8,0,0,1,.95-0.06A7.92,7.92,0,1,1,67.58,68.42Z" class="fill-color--beta"/></svg></span>
+                                </div> <!-- /.step-block__image-wrap -->
+                                <div class="step-block__text spacing--half">
+                                    <h2 class="step-block__heading type-alpha--xl text-color--alpha">Ride</h2>
+                                    <p class="type-alpha--s longform">Take as many short rides as you want while your pass or membership is active.</p>
+                                   
+                                </div> <!-- /.step-block__text -->
+                            </div> <!-- /.step-block -->
+                        </div> <!-- /.column -->
+                        <div class="column">
+                            <div class="step-block spacing">
+                                <div class="step-block__image-wrap position--relative">
+                                    <span class="step-block__image step-block__image--join flex flex--align-bottom"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 50"><title>Step 4</title><polygon points="15.35 19.5 15.35 13.97 11.26 19.5 15.35 19.5" class="fill-color--alpha"/><path d="M14.68,3.28A14.67,14.67,0,1,0,29.36,18,14.67,14.67,0,0,0,14.68,3.28ZM20,22.19H18.2v3H15.35v-3H7.48V20.34l7.7-10.2h3V19.5H20v2.69Z" class="fill-color--alpha"/><polygon points="93.52 24.42 93.52 50 100 50 100 25.16 93.52 24.42" class="fill-color--beta"/><path d="M16.94,37.54a11,11,0,0,1,11-11,10,10,0,0,1,3.16.5l1.74-2.91A2.37,2.37,0,0,1,34.88,23h2l-0.66-2.08a32.68,32.68,0,0,1-4-.5V17.52H42.94v2.82a24.66,24.66,0,0,1-3.57.5l5,15.37h4.49A1.25,1.25,0,0,0,50,35.46V35.38L60,18.77l-1.91-5.9a1,1,0,0,0-.83-0.58H54.82v-3h2.41A4.07,4.07,0,0,1,61,11.88l2.49,7.48a1.67,1.67,0,0,0,.91.25,1.84,1.84,0,0,0,1.83-1.83V12.12a0.75,0.75,0,0,1,1.5,0v5.73a3.33,3.33,0,0,1-3.32,3.32H64l1.83,5.57a13.63,13.63,0,0,1,1.91-.17,11,11,0,1,1-11,11A10.83,10.83,0,0,1,63,27.74l-1.58-5L52.74,37a4.41,4.41,0,0,1-3.9,2.33H46.68a3,3,0,0,1-1.33,2.24l0.83,2.66h2.66v1.74a16.78,16.78,0,0,1-6.64,0V44.19H44.1l-0.66-2.24a2.91,2.91,0,0,1-2.33-2.57H38.78A10.9,10.9,0,0,1,28,48.5a11.08,11.08,0,0,1-11-11m46.93-6.89a7.88,7.88,0,1,0,3.82-1,3.11,3.11,0,0,0-.91.08l1.66,5.07a2.84,2.84,0,0,1,2.16,2.74,2.82,2.82,0,1,1-5.65,0,2.9,2.9,0,0,1,.66-1.83ZM33.8,28.32a10.77,10.77,0,0,1,4.9,7.89h2.41L37.79,26H35.21Zm1.83,7.89a8,8,0,0,0-3.41-5.32l-3.16,5.32h6.56ZM20,37.54a7.91,7.91,0,0,0,15.62,1.74H27.9A2.45,2.45,0,0,1,25.83,38a2.48,2.48,0,0,1,0-2.41l3.57-5.9a9.15,9.15,0,0,0-1.5-.17,8,8,0,0,0-7.89,8" class="fill-color--beta"/><polygon points="93.52 24.42 100 25.16 100 50 93.52 50 93.52 24.42" class="fill-color--beta"/><polygon points="85.49 45.95 89.92 37.54 85.49 29.14 81.67 29.14 86.11 37.54 81.67 45.95 85.49 45.95" class="fill-color--beta"/></svg></span>
+                                </div> <!-- /.step-block__image-wrap -->
+                                <div class="step-block__text spacing--half">
+                                    <h2 class="step-block__heading type-alpha--xl text-color--alpha">Return</h2>
+                                    <p class="type-alpha--s longform">Return your bike to any station, and wait for the green light on the dock to make sure it's locked.</p>
+                                  
+                                </div> <!-- /.step-block__text -->
+                            </div> <!-- /.step-block -->
+                        </div> <!-- /.column -->
+                        </div> <!-- /.layout-split-1-2--flex -->
+                </div>  <!-- /.layout-container -->
+            </div> <!-- /.section__content -->
+        </section> <!-- /.section__steps-to-ride -->
+
+
+        <section class="section__how-it-works spacing--double background-color--white">
+            <header class="section__header text-align--center">
+                <div class="layout-container">
+                    <h1 class="section__heading type-alpha--xl text-color--alpha">Rules of the Road</h1>
+                </div>
+            </header>
+            <div class="section__content">
+                <div class="layout-container spacing--quad">
+                    <div class="layout-split-1-2--flex layout-extension--split-4 spacing--one-and-half flex--justify-center">
+                        <div class="column">
+                            <div class="step-block spacing">
+                                <div class="step-block__image-wrap">
+                                    <span class="step-block__image--full svg-"><svg x="0px" y="0px" viewBox="0 0 100 100" style="enable-background =>new 0 0 100 100;" xml =>space="preserve"><g><g><path class="st1" d="M86.4,19.6c0-0.9-0.7-1.6-1.6-1.6h-0.5c-0.9-0.1-1.7,0.6-1.7,1.6v9.8h3.9L86.4,19.6L86.4,19.6z"/><path class="st1" d="M82.8,65.7v11c0,0.9,0.7,1.6,1.6,1.6h0.5c0.9,0,1.6-0.7,1.6-1.6v-11C86.3,65.8,83.2,65.8,82.8,65.7z"/><path class="st1" d="M92.7,35.1l1.6,6c0,0-5,6.9-9.6,6.9c-4.6,0-9.6-6.9-9.6-6.9l1.6-6h-2.1l-2.5,6c0,0,1.6,6.4,6.2,9.9v8.2c0,0.9,0.7,1.6,1.6,1.6H81L80.6,62c0,0.9,0.7,1.6,1.6,1.6h5.2c0.9,0,1.6-0.7,1.6-1.6l-0.4-1.2h1.1c0.9,0,1.6-0.7,1.6-1.6v-8.1c4.7-3.4,6.2-10,6.2-10l-2.3-6C95.2,35.1,92.7,35.1,92.7,35.1z"/><circle class="st1" cx="84.6" cy="41.8" r="4.1"/><path class="st1" d="M97.1,31.6H72c-0.6,0-1.2,0.5-1.2,1.2c0,0.6,0.5,1.2,1.2,1.2h11.3v2.8h2.1V34h11.7c0.6,0,1.2-0.5,1.2-1.2C98.3,32.1,97.8,31.6,97.1,31.6z"/></g><g><rect x="1.7" class="st0" width="2.9" height="6"/><rect x="1.7" y="10.5" class="st0" width="2.9" height="6"/><rect x="1.7" y="20.9" class="st0" width="2.9" height="6"/><rect x="1.7" y="31.4" class="st0" width="2.9" height="6"/><rect x="1.7" y="41.8" class="st0" width="2.9" height="6"/><rect x="1.7" y="52.2" class="st0" width="2.9" height="6"/><rect x="1.7" y="62.7" class="st0" width="2.9" height="6"/><rect x="1.7" y="73.1" class="st0" width="2.9" height="6"/><rect x="1.7" y="83.5" class="st0" width="2.9" height="6"/><rect x="1.7" y="94" class="st0" width="2.9" height="6"/><path class="st0" d="M55.8,33.7c-0.3,0-0.6,0.1-0.9,0.1V14.3c-1.3-5-8.2-6.8-8.2-6.8h-7h-4.8h-7c0,0-6.9,1.7-8.2,6.8v19.5c-0.2,0-0.4-0.1-0.6-0.1c-1.7,0-3.2,1.1-3.2,2.6h3.7v49.9c0,0,1.6,7,7.7,7h7.7h4.8h7.7c6.1,0,7.7-7,7.7-7V36.2h4.1C59,34.8,57.6,33.7,55.8,33.7z M49.2,11.5c1.7,0,3,0.9,3,2.1s-1.4,2.1-3,2.1c-1.7,0-3-0.9-3-2.1S47.5,11.5,49.2,11.5z M52.2,29.7L49,40.6H25.6l-3.1-10.9C38.1,23.6,52.2,29.7,52.2,29.7z M25.5,11.5c1.7,0,3,0.9,3,2.1s-1.4,2.1-3,2.1c-1.7,0-3-0.9-3-2.1S23.9,11.5,25.5,11.5z M21.2,66.6V37.7h1.3c0,0,6.9,17.3,0,29L21.2,66.6L21.2,66.6z M24,76.1l2.5-13.4h21.9l2.7,13.4H24zM53.3,66.6H52c-6.9-11.7,0-29,0-29h1.3V66.6z"/></g></g></svg></span>
+                                </div> <!-- /.step-block__image-wrap -->
+                                <div class="step-block__text spacing--half">
+                                    <h2 class="step-block__heading type-alpha--l text-color--alpha">Ride with the traffic</h2>
+                                </div> <!-- /.step-block__text -->
+                            </div> <!-- /.step-block -->
+                        </div> <!-- /.column -->
+                        <div class="column">
+                            <div class="step-block spacing">
+                                <div class="step-block__image-wrap">
+                                    <span class="step-block__image--full svg-"><svg x="0px" y="0px" viewBox="0 0 100 50.4" style="enable-background:new 0 0 100 50.4;" xml:space="preserve"><g><g><path class="st1" d="M41.3,18.6h-8.6v-2L41.3,4h-8.6V2.2c0-1.3-1-2.2-2.2-2.2H10.8C9.5,0,8.6,1,8.6,2.2V4H0l8.6,12.5v2H0L8.6,31v2.3H0l8.6,12.5v2.4c0,1.3,1,2.2,2.2,2.2h19.7c1.3,0,2.2-1,2.2-2.2v-2.4l8.6-12.6h-8.6v-2.3L41.3,18.6z M30.5,48.4H10.8V2.2h19.7V48.4z"/><circle class="st1" cx="20.7" cy="10.5" r="6.3"/><path class="st1" d="M20.7,31.5c3.5,0,6.3-2.8,6.3-6.3s-2.8-6.3-6.3-6.3s-6.3,2.8-6.3,6.3C14.4,28.6,17.2,31.5,20.7,31.5zM20.7,21.2c2.2,0,4.1,1.8,4.1,4.1c0,2.2-1.8,4.1-4.1,4.1c-2.2,0-4.1-1.8-4.1-4.1S18.4,21.2,20.7,21.2z"/><path class="st1" d="M20.7,46.4c3.5,0,6.3-2.8,6.3-6.3s-2.8-6.3-6.3-6.3s-6.3,2.8-6.3,6.3C14.4,43.6,17.2,46.4,20.7,46.4zM20.7,36.1c2.2,0,4.1,1.8,4.1,4.1c0,2.2-1.8,4.1-4.1,4.1c-2.2,0-4.1-1.8-4.1-4.1C16.6,37.9,18.4,36.1,20.7,36.1z"/></g><g><polygon class="st0" points="67.5,6.7 56.2,17.9 56.2,33.9 67.5,45.1 83.3,45.1 94.6,33.9 94.6,17.9 83.3,6.7 "/><path class="st0" d="M85.6,1.3H65.2L50.9,15.6V36l14.4,14.4h20.4L100,36V15.6L85.6,1.3z M96,34.4L83.9,46.5h-17L54.8,34.4V17.3L66.9,5.2H84l12,12.1V34.4z"/></g></g></svg></span>
+                                </div> <!-- /.step-block__image-wrap -->
+                                <div class="step-block__text spacing--half">
+                                    <h2 class="step-block__heading type-alpha--l text-color--alpha">Obey traffic signals</h2>
+                                </div> <!-- /.step-block__text -->
+                            </div> <!-- /.step-block -->
+                        </div> <!-- /.column -->
+                        <div class="column">
+                            <div class="step-block spacing">
+                                <div class="step-block__image-wrap">
+                                    <span class="step-block__image--full svg-"><svg viewBox="0 0 48.7 99.9"><path class="st0" d="M14.8,29.8l1.3,8.8H32.5l0.1-.3,0.1,0.3,0.7-5.2,0.7-3.5,7.4,7.5h5.6L37.3,22.3a6.41,6.41,0,0,0-5.9-4h0v0.1L25,18.3H17.6a6.5,6.5,0,0,0-6,4l-9.8,15H7.4Z" fill="#2c94d1"/><path class="st0" d="M24.6,15.2a6.74,6.74,0,0,0,6.8-6.68s0-.08,0-0.12H33a8.4,8.4,0,0,0-16.8,0h1.6a6.74,6.74,0,0,0,6.68,6.8H24.6Z" fill="#2c94d1"/><path class="st0" d="M28,64.2a3.33,3.33,0,0,0-3.3-3.3H24.3A3.33,3.33,0,0,0,21,64.2V96.6a3.33,3.33,0,0,0,3.3,3.3h0.4A3.33,3.33,0,0,0,28,96.6V82.1h0V79.7h0V64.2Z" fill="#2c94d1"/><path class="st0" d="M38.7,40.8h0A7.08,7.08,0,0,0,33.2,43c-0.3.2-.5,0.4-0.9,0.7a2.51,2.51,0,0,0-2.6-2.1H19a2.69,2.69,0,0,0-2.6,2.1,5.5,5.5,0,0,1-.9-0.7A6.92,6.92,0,0,0,10,40.8H0v3.8H10a5,5,0,0,1,3.8,1.5H11.4a1.79,1.79,0,0,0-1.8,1.78s0,0,0,0V74.8h6.6l1-17.9a2.67,2.67,0,0,0,1.8.7H29.8a2.69,2.69,0,0,0,2.7-2.68s0,0,0,0V47.8A8.4,8.4,0,0,0,34.9,46a4.49,4.49,0,0,1,3.8-1.5h10V40.7Z" fill="#2c94d1"/><path class="st0" d="M8.5,76.8v2.4a22.17,22.17,0,0,0,4.5.4,22.82,22.82,0,0,0,4.5-.4V76.8h-9Z" fill="#2c94d1"/><path class="st0" d="M31.3,93.3a22.17,22.17,0,0,0,4.5.4,22.82,22.82,0,0,0,4.5-.4V90.9h-9v2.4Z" fill="#2c94d1"/><path class="st0" d="M39.2,89.3l1-28.2H40.1a1.79,1.79,0,0,0-1.78-1.8H34a1.79,1.79,0,0,0-1.8,1.78s0,0,0,0v0.3l0.4,27.9h6.6Z" fill="#2c94d1"/></svg></span>
+                                </div> <!-- /.step-block__image-wrap -->
+                                <div class="step-block__text spacing--half">
+                                    <h2 class="step-block__heading type-alpha--l text-color--alpha">Stay off the sidewalk</h2>
+                                </div> <!-- /.step-block__text -->
+                            </div> <!-- /.step-block -->
+                        </div> <!-- /.column -->
+                        <div class="column">
+                            <div class="step-block spacing">
+                                <div class="step-block__image-wrap">
+                                    <span class="step-block__image--full svg-"><svg x="0px" y="0px" viewBox="0 0 100 58.5" style="enable-background:new 0 0 100 58.5;" xml:space="preserve"><g><polygon class="st1" points="50.2,35.3 44.6,35.3 44.9,40.6 "/><g><polygon class="st1" points="55.3,35.3 32.5,58.3 38.2,58.3 61.1,35.3 "/><path class="st1" d="M13,24.6l4.4,7.6L20,43.6h3.4l-1.8-12.9l-5.3-10.4l0.7-4.8l1.9,3.8l4,5.7l0,0l0,0h5.2l3.4-2.4v6.6l0.4,5.8l-4.2,7l3.3,1.2l4.2-6.9c0.1-0.2,0-5.7,0-5.7l3.7,4.8l0.5,7.8h3.2L42,34.4l-3.5-5.2v-5.1l2.4,3.5l5.3,0.3v-2l-3.8-0.4l-3.6-5.7l-5.4-1.5c-0.1,0-6.2,4.1-6.2,4.1l-2.7,0.2l-2.9-4.3L19,9.5l-7-1.9l-8.2,5.5l-0.6,8.6h2.2l1.4-6.5l3.2-2L7.2,31.3L0,42.5l2.4,1.7l8.3-9.8L13,24.6z"/><path class="st1" d="M3.8,13.1C3.8,13,3.6,13.1,3.8,13.1L3.8,13.1z"/><path class="st1" d="M10.8,34.3C10.8,34.4,10.8,34.3,10.8,34.3L10.8,34.3z"/><path class="st1" d="M37.3,18.4c1.9,0,3.4-1.5,3.4-3.4s-1.5-3.4-3.4-3.4s-3.4,1.5-3.4,3.4C33.9,16.9,35.4,18.4,37.3,18.4z"/><path class="st1" d="M13.8,4.2c0.3,1.7,1.8,3,3.6,3c2,0,3.6-1.6,3.6-3.6S19.4,0,17.4,0c-1.7,0-3.1,1.1-3.5,2.7h-2l-2,3.8C9.8,6.5,12,5.4,13.8,4.2L13.8,4.2z"/><polygon class="st1" points="25.8,43.7 26.1,46 23,46 10.7,58.3 16.4,58.3 29.6,45.1 "/><polygon class="st1" points="37.3,45.5 37.1,42.7 21.6,58.3 27.3,58.3 40.1,45.5 "/></g><g><path class="st0" d="M82.2,16.9c1.9,0,3.5-1.6,3.5-3.5h0.9c0-2.4-1.9-4.4-4.4-4.4c-2.4,0-4.4,1.9-4.4,4.4h0.9C78.7,15.3,80.3,16.9,82.2,16.9z"/><path class="st0" d="M92.3,43.1c-0.8,0-1.5,0.1-2.2,0.3l-1.2-2c-0.3-0.5-0.9-0.8-1.4-0.8H86l0.5-1.4c1,0,1.9-0.2,2.8-0.4v-2h-2.6l2-1.9L85.4,19l0,0c-1.1-0.1-2.2-0.2-3.3-0.2c-1.1,0-2.2,0.1-3.3,0.2l0,0l-5.4,12h-1.7c-1.2,0-2.2,0.7-2.6,1.8l-1.7,5.3c-0.2,0.1-0.4,0.2-0.6,0.2c-0.7,0-1.3-0.5-1.3-1.3v-4c0-0.3-0.2-0.5-0.5-0.5s-0.5,0.2-0.5,0.5v4c0,1.3,1,2.3,2.3,2.3c0.1,0,0.1,0,0.2,0l-1.3,3.9c-0.5-0.1-0.9-0.1-1.3-0.1c-4.2,0-7.7,3.4-7.7,7.7s3.4,7.7,7.7,7.7c4.2,0,7.7-3.4,7.7-7.7c0-3-1.8-5.6-4.3-6.9l1.1-3.5l6,10c0.5,1,1.5,1.6,2.6,1.6l0.2,2.5h1.9l-0.3,0.9h-1.7v1.3c0.8,0.2,1.5,0.3,2.4,0.3c0.8,0,1.6-0.1,2.4-0.3v-1.3H81l0.3-0.9l0,0l0,0l0.2-0.7c0.9-0.1,1.6-0.9,1.6-1.8h1.6c0.6,3.6,3.8,6.4,7.6,6.4c4.2,0,7.7-3.4,7.7-7.7C100,46.5,96.5,43.1,92.3,43.1z M69.9,50.8c0,3-2.5,5.5-5.5,5.5s-5.5-2.5-5.5-5.5s2.5-5.5,5.5-5.5c0.2,0,0.5,0,0.7,0l-1.2,3.6c-0.9,0.2-1.5,1-1.5,1.9c0,1.1,0.9,2,2,2c1.1,0,2-0.9,2-2c0-0.5-0.2-0.9-0.5-1.3l1.2-3.6C68.8,46.9,69.9,48.7,69.9,50.8z M76.8,49.4L76.8,49.4l-7-11.6l1.4-4.2c0.1-0.2,0.3-0.4,0.6-0.4h1.7v-1.1h2.8l3.3-6.2l1.8,9l-4.8,6.8l0.8,8.2C77.1,49.8,76.9,49.6,76.8,49.4z M81.2,48.4v-6.7l2.9-2.6c0,0,0.1,0,0.2,0L81.2,48.4z M84.7,49.9H83l2.4-7.2h1.8l1,1.6C86.3,45.5,85,47.5,84.7,49.9z M89.2,46.1l2.2,3.7h-4.6C87.1,48.3,88,47,89.2,46.1z M92.3,56.3c-2.6,0-4.8-1.8-5.4-4.3h5.4c0.6,0,1.1-0.3,1.4-0.9s0.3-1.2,0-1.7l-2.5-4.2c0.3,0,0.7-0.1,1-0.1c3,0,5.5,2.5,5.5,5.5S95.3,56.3,92.3,56.3z"/></g></g></svg></span>
+                                </div> <!-- /.step-block__image-wrap -->
+                                <div class="step-block__text spacing--half">
+                                    <h2 class="step-block__heading type-alpha--l text-color--alpha">Yield to pedestrians</h2>
+                                </div> <!-- /.step-block__text -->
+                            </div> <!-- /.step-block -->
+                        </div> <!-- /.column -->
+                    </div> <!-- /.layout-split-1-2--flex -->
+                    
+                </div>  <!-- /.layout-container -->
+            </div> <!-- /.section__content -->
+        </section>
+
+
+         <section class="section__testimonials padding background-color--beta section--with-carousel">
+            <div class="section__content">
+                <div class="layout-container">
+                    <div class="carousel" data-carousel="standard">
+                        <div class="testimonial__slide">
+                            <div class="layout-container layout-container--l text-align--center">
+                                <blockquote class="testimonial__quote spacing">
+                                    <p class="type-alpha--m--bold--l text-color--white">&ldquo;I’ve stopped taking the subway because of NYC Bike. It lets me see the city and saves me a TON of money.&rdquo;</p>
+                                    <footer><cite class="type-alpha--xs--s text-color--white">Surbhi G., 34, Manhattan</cite></footer>
+                                </blockquote>
+                            </div> <!-- /.layout-container -->
+                        </div> <!-- /.testimonial__slide -->
+                       
+                    </div> <!-- /.carousel -->
+                </div> <!-- /.layout-container -->
+            </div> <!-- /.section__content -->
+        </section> <!-- /.section__testimonials -->
+        <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+  <script src="../../menu.js"></script>
+  <script src="../../check-login-status.js"></script>
+  <script src="../../sign-up.js"></script>
+  </body>
 </html>

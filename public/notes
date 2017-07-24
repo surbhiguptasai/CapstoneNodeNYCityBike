@@ -21,3 +21,6 @@ capstone-nycbike-app
 mongoimport --db capstone-nycbike-app --collection userDetails --drop --file C:\\Users\\ravindra\\Desktop\\Thinkful-Projects\\React-Surbhi\\redux\\CapstoneNodeNYCityBike\\seed-data1.json --jsonArray
 
 
+mongoimport --db capstone-nycbike-app --collection userDetails --drop --file C:\\Users\\ravindra\\Desktop\\Thinkful-Projects\\React-Surbhi\\redux\\CapstoneNodeNYCityBike\\seed-data1.json --host ds145659.mlab.com --port 45659  -u surbhi -p surbhi
+
+

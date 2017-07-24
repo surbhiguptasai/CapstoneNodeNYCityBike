@@ -70,26 +70,34 @@ function watchDemoClick() {
 		event.preventDefault();
 		event.stopPropagation();
 		createNewDemoUser();
+		location.href = '/stationmap/';
 	})
 	$('.js-howitworks').click(function(event) {
-		alert("howitworks clicked");
+
 		event.preventDefault();
 		event.stopPropagation();
 		location.href = '/howitworks/';
 	})
 
 	$('.js-explorenyc').click(function(event) {
-		alert("explorenyc clicked");
+
 		event.preventDefault();
 		event.stopPropagation();
 		location.href = '/explorenyc/';
 	})
 
 		$('.js-signup').click(function(event) {
-		alert("explorenyc clicked");
+
 		event.preventDefault();
 		event.stopPropagation();
 		location.href = '/signup/';
+	})
+
+			$('.js-signin').click(function(event) {
+
+		event.preventDefault();
+		event.stopPropagation();
+		location.href = '/signin/';
 	})
 
 	
