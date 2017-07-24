@@ -1,5 +1,5 @@
-var myURL="http://gbfs.citibikenyc.com/gbfs/en/station_information.json";
-var stationResultUrl="http://gbfs.citibikenyc.com/gbfs/en/station_status.json";
+var myURL="https://gbfs.citibikenyc.com/gbfs/en/station_information.json";
+var stationResultUrl="https://gbfs.citibikenyc.com/gbfs/en/station_status.json";
 var stationId=0;
 var stations=[];
 var stationsMap;
