@@ -1,0 +1,62 @@
+* {
+  box-sizing: border-box;
+}
+
+/* 980 wide with 14 gutters, 50px columns, 20px gutters */
+
+.row {
+  max-width: 1020px;
+  padding-left: 20px;
+  padding-right: 20px;
+  margin: 0 auto;
+}
+
+.row::before,
+.row::after {
+  display: table;
+  content: '';
+}
+
+.row::after {
+  clear: both;
+}
+
+.col-1, .col-2, .col-3, .col-4, .col-6, .col-7, .col-12, .col-14 {
+  float: left;
+  padding-left: 1.0204081632%;/*1.04166666%;*/
+  padding-right: 1.0204081632%;
+}
+
+.col-1 {
+  width: 7.14285714%;
+ }
+
+/* 2 columns, 2/14 */
+
+.col-2 {
+  width: 14.2857142857%;
+}
+
+/* 3 columns, 3/14 in % */
+.col-3 {
+  width: 21.428571%;
+}
+
+/* 4 columns, 4/14 */
+.col-4 {
+  width: 28.571428571%;
+}
+
+/* 6 columns, 6/14 */
+.col-6 {
+  width: 42.8571%;
+}
+
+.col-7 {
+  width: 50%;
+}
+
+.col-14 {
+  width: 100%;
+}
+

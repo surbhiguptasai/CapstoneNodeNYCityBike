@@ -1,0 +1,29 @@
+[
+  '{{repeat(40)}}',
+  {
+    _id: '{{objectId()}}',
+    "name": {
+    "firstName":'{{firstName()}}',
+    "lastName": "{{surname()}}"
+    },
+    "gender":'{{gender()}}',
+   "username": '{{firstName().toLowerCase()}}',
+    "accountCode":"CHAS{{integer(2000000000000000, 4000000000000000)}}",
+    "branchName":'{{city()}}',
+    "totalAmount":'{{floating(1000, 4000, 2, "$0,0.00")}}',
+    "email":'{{email()}}',
+     "address": {
+    "street": '{{street()}}',
+    "aptNo":' {{integer(100, 999)}}',
+    "city": '{{random("San Jose,CA", "Dallas,TX","San Diego,CA","San Antonio,TX","Phoenix,AZ","Philadelphia,PA","Houston,TX","Chicago,IL","Los Angeles,CA","New York City,NY")}}',
+    "state": ' {{state()}}',
+    "country": ' {{country()}},',
+    "zipcode": '{{integer(10000, 90000)}}'  
+  },
+    "phone":'+1 {{phone()}}',
+    "ssn":'{{integer(100, 999)}}-{{integer(11, 99)}}-{{integer(1000, 9999)}}',
+     "actopendate":'{{date(new Date(2014, 0, 1), new Date(), "dd-MM-YYYY")}}',
+    "acttype": '{{random("Saving", "Checking")}}'
+  
+  }
+]

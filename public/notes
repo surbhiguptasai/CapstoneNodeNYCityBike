@@ -1,0 +1,23 @@
+https://gbfs.citibikenyc.com/gbfs/gbfs.json
+
+{"last_updated":1500247487,"ttl":10,"data":{"en":{"feeds":[
+
+
+{"name":"system_regions","url":"https://gbfs.citibikenyc.com/gbfs/en/system_regions.json"},
+
+
+{"name":"system_alerts","url":"https://gbfs.citibikenyc.com/gbfs/en/system_alerts.json"},
+
+{"name":"station_status","url":"https://gbfs.citibikenyc.com/gbfs/en/station_status.json"},
+
+{"name":"station_information","url":"https://gbfs.citibikenyc.com/gbfs/en/station_information.json"},
+
+{"name":"system_information","url":"https://gbfs.citibikenyc.com/gbfs/en/system_information.json"}]}}}
+
+AIzaSyDFd-29p6LxJ3sq0PIcgLFSB28vPOs9LpM
+
+capstone-nycbike-app
+
+mongoimport --db capstone-nycbike-app --collection userDetails --drop --file C:\\Users\\ravindra\\Desktop\\Thinkful-Projects\\React-Surbhi\\redux\\CapstoneNodeNYCityBike\\seed-data1.json --jsonArray
+
+

@@ -1,0 +1,1187 @@
+body {
+	font-family: 'Roboto', sans-serif;
+	font-size: 16px;
+	line-height: 1.5;
+	color: #3c3c3c;
+}
+
+/*body:after{
+ display:none;
+ content: url('../images/income-hover.png') url('../images/expense-hover.png');
+}*/
+
+a {
+	text-decoration: none;
+}
+
+/*a:visited {
+	color: inherit;
+}*/
+
+* button:hover, .row-item:hover, .add-adjustment-button:hover, 
+.plus-sign:hover, .add-item:hover, .balance-increased:hover, .balance-decreased:hover {
+	cursor: pointer;
+	color:white;
+}
+
+#nav-bar-wrap {
+	position: fixed;
+	height: 60px;
+	width: 100%;
+	border-bottom: 1px solid #d4d4d4;
+	padding: 10px;
+	background-color: black;
+	z-index: 1;
+}
+
+#nav-bar {
+	position: relative;
+	margin: 0 auto;
+	max-width: 1000px;
+}
+
+.site-title {
+	font-family: 'Roboto Condensed', sans-serif;
+	position: absolute;
+	width: 250px;
+	font-size: 32px;
+	font-weight: 400;
+	line-height: 40px;
+	font-style: italic;
+	color:white;
+}
+
+.nav-items-wrap {
+	text-align: right;
+	
+}
+
+.nav-item1{
+	position: relative;
+	display: inline-block;
+	color: white;
+	padding-left: 50px;
+}
+
+.nav-item{
+	position: relative;
+	display: inline-block;
+	line-height: 40px;
+	color: #a9a9a9;
+	padding-left: 50px;
+}
+
+.nav-item a {
+	color: white;
+}
+.nav-item a:hover {
+	color: white;
+}
+
+.nav-button, .sign-up-form button, button#save, .plus-sign {
+	background-color: #66c470;
+	border: 1px solid #66c470;
+}
+
+.nav-button:hover, .sign-up-form button:hover, button#save:hover, .plus-sign:hover {
+	background-color: #339933;
+}
+
+.nav-current {
+	color: white;
+}
+
+.nav-border {
+	position: absolute;
+    width: 100%;
+    left: 25px;
+    top: 48px;
+    height: 3px;
+    background-color: #66c470;
+}
+
+.nav-button {
+	
+	border-radius: 5px;
+	background-color: #339933;
+
+	text-align: center;
+	padding-left:5px; 
+		padding-right:5px;
+}
+
+.content-wrap {
+	/*max-width: 1000px;*/
+	margin: 0 auto;
+}
+
+main {
+ 	padding-top: 60px;
+}
+
+.front-page {
+	position: relative;
+}
+
+.front-page header {
+	position: absolute;
+	     top: 50%;
+         left: 50%;
+         transform: translate(-50%, -50%);
+	color: black;
+}
+
+.front-page h1 {
+	font-family: 'Roboto Condensed', sans-serif;
+	font-size: 64px;
+	font-weight: 700;
+	margin: 0;
+	font-style: italic;
+}
+
+.front-page p {
+	margin: 0;
+	font-size: 30px;
+	color: gray;
+}
+
+.front-page img {
+	width: 100%;
+	z-index:0;
+}
+
+.gray-back {
+	background-color: #efefef;
+}
+
+.about-box {
+	min-height: 750px;
+	margin-top: -7px;
+}
+
+#about {
+	width: 50%;
+	display: inline-block;
+	position: relative;
+	top: -70px;
+	padding-top: 70px;
+	padding-left: 15px;
+	padding-right: 15px;
+}
+
+#about h2 {
+	line-height: 1.2;
+}
+
+.about-box {
+	padding: 25px 15px 150px 15px;
+}
+
+
+.about-box p {
+	margin: 25px 0;
+}
+
+.about-box li {
+	padding-bottom: 30px;
+}
+
+#sign-up {
+	float: center;
+	text-align: center;
+	
+	padding: 95px 0 25px 0;
+	width: 45%;
+}
+
+.sign-up-form {
+	padding: 40px 40px 0 40px;
+	text-align: center;
+	background-color: #f9f9f9;
+}
+
+.sign-up-form, form input, form button {
+	border-radius: 5px;
+}
+
+.sign-up-form h2 {
+	margin: 0;
+	text-align: center;
+	padding-bottom: 40px;
+	color: #565656;
+	font-weight: 400;
+}
+
+.sign-up-form label, .sign-up-form input {
+	display: block;
+	margin-bottom: 15px;
+	font-weight: 600;
+	text-align: left;
+}
+
+.sign-up-form input, .sign-up-form button {
+	width: 100%;
+	padding: 15px;
+}
+
+.sign-up-form input, .sign-up-form {
+	color: #222;
+	border: 2px solid #d4d4d4;
+}
+
+.sign-up-form button {
+	height: 55px;
+	color: white;
+	font-size: 18px;
+	border: none;
+	margin-bottom: 10px;
+}
+
+.message-box {
+	height: 30px;
+	text-align: center;
+}
+
+.js-message {
+	color: red;
+	line-height: 30px;
+	font-weight: bold;
+}
+
+.center {
+	text-align: center;
+}
+
+a.js-demo:hover {
+	color: #66c470;
+}
+
+a.js-demo {
+	color:  #339933;
+	font-weight: bold;
+}
+
+.add-item-box {
+	float: left;
+	position: relative;
+	width: 160px;
+	margin: 35px;
+}
+
+.plus-sign {
+	border-radius: 50%;
+	height: 50px;
+	width: 50px;
+	background-image: url(../images/plus-sign.png);
+	background-position: center;
+	background-repeat: no-repeat;
+}
+
+.add-item {
+	position: absolute;
+	height: 30px;
+	line-height: 30px;
+	top: 10px;
+	padding-left: 15px;
+    	margin-left: 50px;
+}
+
+.row-heading {
+	background-color: #f5f5f5;
+	border-top: 1px solid #dadada;
+}
+
+.row-item:hover {
+	background-color: #f3fdff;
+}
+
+.row-item *{
+	text-overflow: ellipsis;
+	overflow: hidden;
+	white-space: nowrap;
+}
+
+.report-row, .report-row .col-2, 
+.month-row .col-14, .days-header, .days-header .col-2 {
+	margin: 0;
+	padding: 0;
+}
+
+.report-row, .month-row, .days-header {
+	margin: 0 5px;
+}
+
+.month-row {
+	margin: 0;
+	padding-top: 60px;
+	height: 140px;
+}
+
+.month-row .date-box {
+	height: 80px;
+	line-height: normal;
+	border: none;
+}
+
+.month-row h2 {
+	margin: 0;
+	font-size: 54px;
+}
+
+.days-header .date-box {
+	height: 40px;
+	line-height: 40px;
+	border-left: none;
+	border-right: none;
+}
+
+.date-box {
+	height: 150px;
+	position: relative;
+	line-height: 150px;
+	text-align: center;
+	border-right: 1px solid gray;
+	border-bottom: 1px solid gray;
+}
+
+.report-row .Sunday {
+	border-left: 1px solid gray;
+}
+
+.report-row .Sunday, .report-row .Saturday {
+    background-color: #f3f3f3;
+}
+
+.empty {
+	background-color: white;
+	background-image: repeating-linear-gradient(-45deg, #f3f3f3, #f3f3f3 2px, white 2px, white 12px);
+}
+
+.dashboard-header-box {
+	height: 35px;
+	font-size: 14px;
+	line-height: 35px;
+	text-align: center;
+	color: #ababab;
+}
+
+.dashboard-entry-box {
+	text-align: center;
+	position: relative;
+	height: 120px;
+	line-height: 120px;
+}
+
+header .dashboard-entry-box {
+	height: 70px;
+	line-height: 70px;
+}
+
+.top-row {
+	padding-top: 30px;
+	padding-bottom: 30px;
+	height: 190px;
+}
+
+.entry-type {
+	position: absolute;
+	bottom: 15px;
+	height: 20px;
+	line-height: 20px;
+	font-weight: bold;
+	width: 100%;
+}
+
+[amount-type = Expense].dashboard-entry-box .entry-type {
+	bottom: 21px;
+}
+
+[entry-name = type][amount-type = Income].dashboard-entry-box   {
+	background-image: url('../images/income.png');
+	background-repeat: no-repeat;
+	background-position: center 15px;
+}
+
+.row-item:hover [entry-name = type][amount-type = Income].dashboard-entry-box {
+	background-image: url('../images/income-hover.png');
+	color: #339933;
+}
+
+.row-item:hover [amount-type = Income].dashboard-entry-box {
+	color: #339933;
+}
+
+[entry-name = type][amount-type = Expense].dashboard-entry-box {
+	background-image: url('../images/expense.png');
+	background-repeat: no-repeat;
+	background-position: center 23px;
+}
+
+.row-item:hover [entry-name = type][amount-type = Expense].dashboard-entry-box {
+	background-image: url('../images/expense-hover.png');
+	color: #FF0000;
+}
+
+.row-item:hover [amount-type = Expense].dashboard-entry-box {
+	color: #FF0000;
+}
+
+[amount-type = Expense].dashboard-entry-box {
+	color: #eb5757;
+}
+
+[amount-type = Income].dashboard-entry-box {
+	color: #66c470;
+}
+
+[entry-name = name].dashboard-entry-box, [entry-name = name].dashboard-header-box {
+	text-align: left;
+	padding-left: 50px;
+}
+
+[entry-name = name].dashboard-entry-box {
+	line-height: normal;
+}	
+
+p[entry-name = name] {
+	margin: 0;
+	font-weight: bold;
+	font-size: 28px;
+	padding: 25px 0 10px 0;
+}
+
+p[entry-name = date-range] {
+	margin: 0;
+	color: #b1b1b1;
+	font-size: 14px;
+}
+
+[entry-name = amount].dashboard-entry-box {
+	font-weight: bold;
+	font-size: 24px;
+}
+
+[entry-name = period].dashboard-entry-box {
+	text-align: left;
+}
+
+.settings-box {
+	padding: 5px 40px;
+	border: 1px solid #cecece;
+	border-radius: 5px;
+	margin-left: 35px;
+	margin-right: 35px;
+	float: left;
+}
+
+.settings-box p {
+	text-align: left;
+	line-height: 1.2;
+	margin: 18px 0;
+}
+
+.settings-box a {
+	color: #66c470;
+}
+
+.settings-box a:hover {
+	color: #3c3c3c;
+}
+
+.js-previous-balance, .previous-bal-date {
+	font-size: 14px;
+	color: #ababab;
+}
+
+.settings {
+	color: #ababab;
+}
+.username {
+	font-weight: bold;
+	font-size: 22px;
+}
+
+.bolded {
+	font-weight: bold;
+}
+
+.outlined {
+	border: 1px solid gray;
+}
+
+.before-today {
+	background-color: #ececec !important;
+}
+
+.balance {
+	font-size: 24px;
+	font-weight: bold;
+	text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+}
+
+.balance-increased {
+	color: green;
+}
+
+.balance-increased:hover {
+	background-color: #f3fff3;
+}
+
+.balance-decreased {
+	color: red;
+}
+
+.balance-decreased:hover {
+	background-color: #ffeeee;
+}
+
+.day-of-week, .date-num, .date-month {
+	line-height: normal;
+	position: absolute;
+	padding: 5px;
+}
+
+.date-num {
+	right: 5px;
+	font-weight: normal;
+    font-size: 20px;
+    color: #a7a7a7;
+}
+
+.day-of-week {
+	bottom: 0;
+	right: 0;
+}
+
+.js-pop-window input::placeholder{
+	color: #b1b1b1;
+}
+
+.pop-window {
+	position: fixed;
+	display: block;
+	padding: 20px 35px 0 35px;
+	width: 400px;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	margin: auto auto;
+	border-radius: 5px;
+	background-color: white;
+	height: 485px;
+	overflow: auto;
+	max-height: 100%;
+}
+
+.pop-window h2 {
+	margin: 0 0 10px 0;
+}
+
+.pop-window-background {
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background-color: rgba(0, 0, 0, 0.5);
+	z-index: 1;
+}
+
+.edit-adj-form, .new-adj-form {
+	width: 100%;
+}
+
+.form-half {
+	width: 165px;
+}
+
+.edit-adj-form label, .new-adj-form label {
+	display: block;
+	color: #9a9a9a;
+	font-size: 14px;
+}
+
+.edit-adj-form p, .new-adj-form p {
+	margin: 5px 0;
+}
+
+.edit-adj-form input, .new-adj-form input {
+	margin-bottom: 10px;
+}
+
+input {
+	border: 1px solid #c3c3c3;
+}
+
+input#name, input#amount, input#start-date, input#end-date, input#period-unit, input#date {
+	width: 100%;
+	padding: 3px 5px;
+}
+
+input#name {
+	font-weight: bold;
+	font-size: 22px;
+}
+
+input#period-unit {
+	width: 60px;
+}
+
+label[for=type] {
+	display: none;
+}
+
+input[type=radio] {
+	margin-left: 15px;
+}
+
+.edit-adj-form button, .new-adj-form button {
+	margin: 10px 0;
+	padding: 10px 0;
+}
+
+button#save {
+	width: 40%;
+	color: white;
+}
+
+.new-adj-form button#save {
+	width: 70%;
+}
+
+button#cancel, button#delete {
+	width: 27%;
+	background-color: white;
+	border: 1px solid #9a9a9a;
+	color: gray;
+	margin-left: 3%;
+}
+
+button#cancel:hover {
+	background-color: #efefef;
+	border: 1px solid #efefef;
+    	color: #616161;
+}
+
+button#delete:hover {
+	background-color: red;
+	border: 1px solid red;
+	color: white;
+}
+
+footer {
+	margin-top: 50px;
+	padding: 25px;
+	height: 80px;
+}
+
+.spinner {
+	opacity: .3;
+}
+
+#js-loader {
+	margin: 0 auto;
+	text-align: center;
+	position: relative;
+}
+
+#js-loader p {
+	padding-top: 100px;
+}
+
+.no-entries {
+	text-align: center;
+	padding-top: 80px;
+}
+
+.detail {
+    position: absolute;
+    padding-top: 30px;
+    height: 100%;
+    width: 100%;
+    color: gray;
+    font-size: 14px;
+}
+
+.detail-box {
+	position: fixed;
+
+}
+
+.detail-pop {
+	line-height: normal;
+    color: #3c3c3c;
+    text-align: left;
+    padding: 15px 15px 25px 15px;
+}
+
+.detail-pop li {
+	margin: 10px 0;
+}
+
+.hide {
+	display: none;
+}
+
+.burger-container {
+	display: none;
+	z-index: 3;
+	color: white;
+}
+
+.burger, .x {
+	position: fixed;
+	z-index: 4;
+	cursor: pointer;
+	line-height: 60px;
+	height: 60px;
+	font-weight: bold;
+}
+
+.burger {
+	top: 0;
+	right: 15px;
+	font-size: 28px;
+
+}
+
+.x {
+	top: 11px;
+	right: 18px;
+	font-size: 56px;
+	display: none;
+}
+
+.pop-exit {
+	position: absolute;
+	top: -46px;
+	right: 13px;
+	font-size: 46px;
+	color: #d0d0d0;
+}
+
+.small-pop {
+	height: 292px;
+}
+
+@media only screen and (max-width: 950px) {
+
+	.front-page h1 {
+	font-size: 58px;
+	}
+}
+
+@media only screen and (max-width: 800px) {
+
+	.nav-button {
+		width: 80px;
+	}
+
+	.front-page h1 {
+		font-size: 50px;
+	}
+
+	.front-page header {
+	     position: absolute;
+	     top: 50%;
+         left: 50%;
+         transform: translate(-50%, -50%);
+	}
+
+	.about-box {
+		padding-left: 30px;
+		padding-right: 30px;
+	}
+
+	.sign-up-form input, .sign-up-form button {
+    		padding: 10px
+    	}
+
+   	 .sign-up-form {
+		padding: 30px 30px 40px 30px;
+	}
+
+}
+
+@media only screen and (max-width: 700px) {
+
+	.nav-item {
+		padding-left: 25px;
+	}
+
+	.nav-border {
+    	left: 12px;
+	}
+
+	#about {
+		width: 100%;
+	}
+
+	#sign-up {
+		float: none;
+		margin: -70px auto;
+		width: auto;
+		max-width: 400px;
+		padding-left: 0;
+		padding-top: 70px;
+	}
+
+	.top-row {
+		height: auto;
+	}
+
+	.settings-box {
+		max-width: 400px;
+		float: none;
+		margin: 0 auto;
+	}
+
+	.add-item-box {
+		width: 100%;
+		float: none;
+		max-width: 160px;
+		margin: 30px auto 10px auto;
+	}
+
+	.row-item .col-2, .row-heading .col-2 {
+		width: 20%;
+	}
+
+	.row-item .col-2, [entry-name = type][amount-type = Expense].dashboard-entry-box, 
+	[entry-name = type][amount-type = Income].dashboard-entry-box {
+		overflow: visible;
+	}
+
+	.row-item .col-6, .row-heading .col-6 {
+		width: 60%;
+	}
+
+	.row-heading .col-4 {
+		display: none;
+	}
+
+	.row-item .col-4{
+		width: 78%;
+		margin-left: 21.0204%;
+		padding-left: 20px;
+	}
+
+	.dashboard-entry-box {
+		height: 90px;
+		line-height: 90px;
+	}
+
+	.dashboard-entry-box[entry-name = "period"] {
+		height: 25px;
+		line-height: 25px;
+		margin-bottom: 30px;
+		font-size: 14px;
+	}
+
+	[entry-name = name].dashboard-entry-box, [entry-name = name].dashboard-header-box {
+		text-align: left;
+		padding-left: 20px;
+	}
+
+	[entry-name = type][amount-type = Expense].dashboard-entry-box {
+		background-position: center 29px;
+	}
+
+	[entry-name = type][amount-type = Income].dashboard-entry-box {
+		background-position: center 24px;
+	}
+
+	[amount-type = Expense].dashboard-entry-box .entry-type {
+		bottom: -15px;
+		font-size: 14px;
+	}
+
+	[amount-type = Income].dashboard-entry-box .entry-type {
+		bottom: -24px;
+		font-size: 14px;
+	}
+
+	p[entry-name = date-range] {
+		position: absolute;
+		bottom: 0;
+	}
+
+}
+
+@media only screen and (max-width: 640px) {
+
+	.site-title {
+		font-size: 28px;
+	}
+
+	.row-item, .row-heading {
+		padding: 0 5px;
+	}
+
+}
+
+@media only screen and (min-width: 601px) {
+	.nav-items-wrap {
+		display: block !important; /* to override jquery inline `display: none` if browser resized while burger menu closed */
+	}
+}
+
+@media only screen and (max-width: 600px) {
+
+	.burger-container {
+		display: block;
+	}
+
+	.nav-items-wrap {
+		display: none;
+		position: fixed;
+		top: 0;
+		right: 0;
+		z-index: 2;
+		width: 250px;
+		height: 100%;
+		padding: 20px 15px;
+		background-color: #f5f5f5;
+	}
+
+	.nav-item {
+		width: 100%;
+		display: block;
+		text-align: center;
+		padding: 10px 0;
+		color: white;
+	}
+
+	.nav-item a {
+		color: white;
+		width: 100%;
+		display: block;
+	}
+
+	.nav-button {
+		margin: 0 auto;
+		width: 100%;
+		padding-left:5px; 
+		padding-right:5px;
+	}
+
+	.nav-border {
+		display: none;
+	}
+
+	.front-page p {
+		font-size: 14px;
+	}
+
+	.front-page header {
+	     position: absolute;
+	     top: 50%;
+         left: 50%;
+         transform: translate(-50%, -50%);
+	}
+
+	.front-page img {
+		/*margin-left: -20px;*/
+	}
+
+	.about-box {
+		padding-top: 10px;
+	}
+
+}
+
+@media only screen and (max-width: 500px) {
+
+	.about-box {
+		padding-left: 10px;
+		padding-right: 10px;
+		margin-top: -5px;
+	}
+
+	.nav-items-wrap {
+		width: 100%;
+	}
+
+	.front-page header {
+		position: absolute;
+	     top: 50%;
+         left: 50%;
+         transform: translate(-50%, -50%);
+	}
+
+	.front-page {
+		line-height: 1.3;
+	}
+
+	.front-page p {
+		font-size: 12px;
+	}
+
+	.front-page img {
+		/*margin-left: -30px;*/
+	}
+
+	.date-box {
+		height: 100px;
+		line-height: 100px;
+	}
+
+	.month-row h2 {
+		font-size: 40px;
+	}
+
+	.month-row {
+		height: auto;
+	}
+
+	.days-header {
+		font-size: 14px;
+	}
+
+	.col-14 .date-box {
+		height: auto;
+	}
+
+	.date-num {
+		font-size: 12px;
+		right: 3px;
+	}
+
+	.balance {
+		font-size: 16px;
+	}
+
+	.detail {
+		font-size: 12px;
+	}
+
+	.pop-exit {
+		top: -20px;
+	}
+
+}
+
+@media only screen and (max-width: 450px) {
+
+	.pop-window {
+    		height: 100%;
+    		width: 100%;
+    		margin: 0;
+    		padding: 30px;
+    		top: 0;
+    		left: 0;
+    		border-radius: 0;
+	}
+
+	.pop-window h2 {
+		font-size: 22px;
+	}
+
+	.month-row h2 {
+		font-size: 34px;
+	}
+
+	#about h2 {
+		font-size: 20px;
+	}
+
+	.front-page header {
+	     position: absolute;
+	     top: 50%;
+         left: 50%;
+         transform: translate(-50%, -50%);
+	}
+
+	.front-page h1 {
+		font-size: 36px;
+	}
+
+	.front-page img {
+		/*margin-left: -40px;*/
+
+	}
+
+	.date-box {
+		height: 80px;
+		line-height: 80px;
+	}
+
+	.balance {
+		font-size: 14px;
+	}
+
+	.detail {
+		padding-top: 15px;
+		font-size: 11px;
+	}
+
+	p[entry-name = name] {
+		font-size: 24px;
+	}
+
+	[entry-name = amount].dashboard-entry-box {
+		font-size: 18px;
+	}
+
+	.pop-exit {
+		top: -12px;
+	}
+
+}
+
+@media only screen and (max-width: 400px) {
+
+	p[entry-name = name] {
+		font-size: 19px;
+	} 
+
+	[entry-name = type][amount-type = Income].dashboard-entry-box, 
+	[entry-name = type][amount-type = Expense].dashboard-entry-box {
+		width: 45px;
+		background-size: contain;
+		
+	}
+
+	[amount-type = Expense].dashboard-entry-box .entry-type, 
+	[amount-type = Income].dashboard-entry-box .entry-type {
+		font-size: 12px;
+		overflow: visible;
+		bottom: -4px;
+	}
+
+	[amount-type = Income].dashboard-entry-box .entry-type {
+		bottom: 0px;
+	}
+
+	.row-item .col-4{
+		margin-left: 18%;
+	}
+
+	[entry-name = name].dashboard-entry-box, [entry-name = name].dashboard-header-box {
+		padding-left: 10px;
+	}
+
+	p[entry-name = date-range] {
+ 		font-size: 12px;
+	}
+
+@media only screen and (max-width: 350px) {
+
+	.front-page h1 {
+		font-size: 30px;
+	}
+
+	.front-page header {
+	     position: absolute;
+	     top: 50%;
+         left: 50%;
+         transform: translate(-50%, -50%);
+	}
+	.site-title{
+		text-align: center;
+	}
+
+}

@@ -1,0 +1,43 @@
+body {
+  box-sizing: border-box;
+  text-align: center;
+
+}
+/*.js-search-form{
+
+    
+    margin-top: 50px;
+    
+  
+
+}*/
+
+.js-search-results{
+
+    background-color: lightgrey;
+    margin-top: 50px;
+    
+    border: 25px solid green;
+    padding: 25px;
+    margin: 25px;
+
+}
+h1{
+margin-top: 50px;
+}
+p{
+	font-size: 20px;
+	font-weight: bold;
+	text-align: right;
+	display: inline-block;
+
+	
+}
+  a>img{
+	text-align: left;
+	display: block;
+	margin: 20px;
+}
+a:hover {
+    color: hotpink;
+}

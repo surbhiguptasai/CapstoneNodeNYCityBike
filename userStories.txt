@@ -1,0 +1,5 @@
+1.As a bank admin I should be able to see all the users along with their account details.
+2.As a bank admin I should be ableto see the detailsof a particular user.
+3.As a bank admin I should be able to modify the details of a particular user.
+4.As a bank admin I should be able to create a new user.
+5.As a bank admin I should be able to delete a user.

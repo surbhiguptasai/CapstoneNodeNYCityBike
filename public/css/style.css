@@ -1,0 +1,468 @@
+*{
+	box-sizing: border-box;
+
+}
+.toggle{
+	visibility: hidden;
+
+
+}
+.toggle1{
+	visibility: hidden;
+
+}
+.show1{
+	visibility: visible;
+}
+#hidden{
+	float: right;
+
+
+}
+.editableSet
+{
+    background-color: yellow;
+}
+
+#hidden1{
+    position: fixed;
+    height: 55px;
+    width: 100%;
+    border-bottom: 1px solid #d4d4d4;
+    padding: 10px;
+    background-color: #cedbef;
+    z-index: 1;
+
+
+}
+
+.form2btn{
+    
+    text-align:center;
+}
+.header1{
+       background-image: url("../img/headerBG.jpg");
+}
+.show #add-row,.show #delete-row{
+	visibility: visible;
+
+}
+.download
+{
+	float:right;
+}
+
+
+	#showResult{
+		clear: both;
+	}
+	.image{
+		cursor: pointer;
+
+	}
+#logoImg {
+	/*background-image:url("img/logo3.jpg");*/
+	/*height:100px;
+	width:100px;*/
+	/*margin:auto;*/
+	/*float:right;*/
+	background-repeat:no-repeat;
+    
+    padding-left:1px;
+        padding-right:1px;
+        
+         float: right;
+
+}
+.img-fluid {
+    max-width: 100%;
+    height: auto;
+    }
+#userSubmit{
+	/*background-color: blue;
+	color:white;
+	width:auto;
+	height:50px;
+	margin-bottom: 20px;*/
+	
+}
+.editabletext
+{
+  background-image: url("../img/editImage.jpg"); 
+  background-repeat:no-repeat;
+  padding-left: 25px;
+}
+
+.cellEdited{
+	background-color: #adc9f4;
+	visibility: visible;
+}
+
+body{
+	/*background-image: url("../img/bgImageAddPage.jpg");*/
+}
+#form-{
+	
+}
+h1,h6{
+	text-align: center;
+	color: whitesmoke;
+}
+ .form2h1{
+    text-align: center;
+    color: black;
+    margin-bottom: 20px;
+    font-style: italic;
+    font-weight: bold;
+}
+
+.form-inline{
+	margin-top: 50px; 
+	margin-bottom: 20px;
+	clear: both;
+	border-style: double;
+	padding: 20px;
+	text-align: left;
+
+}
+.form-group
+{
+    /*padding-left: 40px;*/
+
+}
+.form-horizontal{
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-top: 5px; 
+    margin-bottom: 20px;
+    clear: both;
+    /*border-style: double;*/
+    padding: 30px;
+    text-align: left;
+
+
+}
+.nav
+{
+    clear:both;
+}
+
+input,select,label{
+	/*height:35px;
+	width:150px;
+	text-align: left;*/
+	/*margin: 5px;*/
+    /*padding-left:20px;
+    padding-right:20px;*/
+}
+.labelClass
+{
+	/*display: inline-block;
+    max-width: 40%;
+     margin: 0px; 
+    font-weight: bold;
+    padding: 10px;
+    font: italic;
+    text-align: left;
+    margin:5px;
+    font-size: 16px;*/
+}
+.inputclass{
+	
+   /* height: 45px;
+    width: 300px;
+    text-align: left;
+    margin: 5px;
+    font: italic;
+    font-style: italic;*/
+
+}
+/*#fieldset label {
+    display: inline-block;
+    max-width: 100%;
+     margin: 0px; 
+    font-weight: 700;
+    padding: 10px;
+    font: italic;
+}*/
+button{
+	/* display: inline-block;
+	 margin: auto;
+    margin-top: 20px;
+
+    width: 40%;
+    margin-bottom: 10px;*/
+        margin: auto;
+}
+.search{
+	font-weight:bold;
+	font-size: 20px;
+	color: blue;
+	margin-right: 30px;
+}
+.hide{
+
+
+}
+#delete-row,#save-row,#add-row{
+	/*height: 30px;
+	width: 150px;
+	background-color: blue;
+	margin-bottom: 0;
+	color: white;*/
+	
+}
+
+
+.modal {
+    overflow: auto;
+
+}
+.modal-content {
+    background-image: url("../img/bankBG5.jpg");
+        width: 50%;
+    margin-left: 25%;
+}
+.form1{
+    margin-top: 55px;
+}
+
+.results{
+    margin-top: 80px;
+}
+
+#fieldset{
+    display: inline-block;
+    margin: 5px;
+    border-style: dashed;
+    padding-bottom: 50px;
+    padding-left: 30px;
+    padding-right: 50px;
+    height: auto;
+    width: auto;
+    clear: right;
+    /* border: 2px; */
+    min-width: 2px;
+    /* padding: 2px; */
+        border-width: 1.5px;
+        border-color:grey;
+
+}
+.avatar
+{
+	float:right;
+}
+   legend{ 
+   	display: block;
+    width: 100%;
+    padding: 0;
+    /* margin-bottom: 20px; */
+    font-size: 21px;
+    line-height: inherit;
+    color: #333;
+    border: 0;
+        margin-top: 15px;
+        font-weight: bold;
+    /* border-bottom: 1px solid #e5e5e5; */}
+@media 
+    only screen and (max-width: 760px)
+    {
+        .form2btn {
+            margin: 0px;
+       
+}
+        b{
+            font-weight: 400;
+        }
+h1{
+    font-size: 15px;
+}
+
+.form-group{
+    padding-left: 0px;
+}
+.modal-content {
+    background-image: url("../img/bankBG5.jpg");
+        width: 100%;
+    margin-left: 0%;
+}
+  .btn-responsive {
+    padding:2px 4px;
+    font-size:80%;
+    line-height: 1;
+    border-radius:3px;
+  }
+.tabulator,.tabulator-tableHolder,.tabulator-table,.tabulator-row,.tabulator-cell
+{
+display:block !important;
+}
+.tabulator {
+    margin-left: 0px;
+}
+.tabulator .tabulator-header .tabulator-col, .tabulator .tabulator-header .tabulator-col-row-handle
+{
+    display:block !important;
+}
+.tabulator-header
+{
+    position: absolute !important;
+    top: -9999px !important;
+    left: -9999px !important;
+}
+.tabulator-row { 
+    border: 1px solid #ccc !important; 
+    /*overflow: visible !important;*/
+}
+.tabulator-cell { 
+            /* Behave  like a "row" */
+            border: none !important;
+            /*border-bottom: 1px solid #eee !important; */
+            position: relative !important;
+            overflow: visible !important;
+            /*width:100% !important;*/
+
+            padding-left: 50% !important; 
+    }
+    .tabulator-cell:before { 
+            /* Now like a table header */
+            position: absolute !important;
+            /* Top/left values mimic padding */
+            top: 6px !important;
+            left: 6px !important;
+            width: 45% !important; 
+            padding-right: 10px !important; 
+            white-space: nowrap !important;
+        }
+
+
+
+    .tabulator-cell:nth-of-type(1):before { content: "Name" !important; }
+    .tabulator-cell:nth-of-type(2):before { content: "Gender" !important; }
+    .tabulator-cell:nth-of-type(3):before { content: "Email" !important; }
+    .tabulator-cell:nth-of-type(4):before { content: "Age" !important; }
+    .tabulator-cell:nth-of-type(5):before { content: "Company" !important; }
+    .tabulator-cell:nth-of-type(6):before { content: "Phone" !important; }
+    .tabulator-cell:nth-of-type(7):before { content: "Address" !important; }
+    .tabulator-cell:nth-of-type(8):before { content: "ZipCode" !important; }
+    .tabulator-cell:nth-of-type(9):before { content: "Country" !important; }
+
+.container-fluid{
+padding-left: 0px;
+}
+    @media only screen
+    and (min-device-width : 320px)
+    and (max-device-width : 480px) {
+        .results
+        {
+            padding-right: 5px !important;
+            padding-left:5px !important;
+        }
+        .col-md-1 {width: 25%;}
+        .download
+        {
+          width:10%;
+        }
+        body { 
+            padding: 0; 
+            margin: 0; 
+            width: auto !important; 
+            margin-right: 0;
+
+        }
+    #header {
+        position: relative;
+    }
+    #logoImg img {
+
+        width: 80%;
+      /*  padding-left:1px;
+        padding-right:1px;*/*/
+        margin-top: 2px;
+    }
+
+        .search{
+   
+    font-size: 12px;
+
+}
+        h1{
+            font-size: 20px;
+        }
+        h6{
+            font-size: 10px;
+        }
+        .tabulator-cell { 
+
+            width:200px !important;
+            height:auto !important;
+            
+
+            padding-left: 42% !important; 
+    }
+    .tabulator{
+        table-layout: fixed !important;
+        }
+    }
+    
+    /* iPads (portrait and landscape) ----------- */
+ /*   @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) {
+        .col-md-1 {width: 25%;}
+        body { 
+            width: 495px !important; 
+        }
+         h1{
+            font-size: 24px;
+        }
+        h6{
+            font-size: 8px;
+        }
+           .tabulator-cell { 
+
+            padding-left: 50% !important; 
+    }
+    }*/
+}
+@media 
+    only screen and (min-width: 760px)
+  
+    {
+        #logoImg{
+            margin:0px;
+
+         
+        }
+        .container-fluid{
+padding-left: 0px;
+}
+.tabulator {
+    margin-left: 15px;
+}
+          .btn-responsive {
+    padding:4px 9px;
+    font-size:90%;
+    line-height: 1.2;
+  }
+        }
+
+
+        @media 
+    only screen and (min-width: 1024px)
+  
+    {
+       
+          .btn-responsive {
+    padding:4px 9px;
+    font-size:120%;
+    line-height: 1.2;
+  }
+  .tabulator {
+    margin-left: 15px;
+}
+  .container-fluid{
+padding-left: 0px;
+}
+        }
+
+
+
+
