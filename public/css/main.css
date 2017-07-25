@@ -729,7 +729,7 @@ footer {
 .burger-container {
 	display: none;
 	z-index: 3;
-	color: white;
+	color: black;
 }
 
 .burger, .x {
