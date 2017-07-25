@@ -729,7 +729,7 @@ footer {
 .burger-container {
 	display: none;
 	z-index: 3;
-	color: black;
+	color: white;
 }
 
 .burger, .x {
@@ -944,7 +944,7 @@ footer {
 		width: 250px;
 		height: 100%;
 		padding: 20px 15px;
-		background-color: #f5f5f5;
+		background-color: grey;
 	}
 
 	.nav-item {
