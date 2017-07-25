@@ -9,6 +9,10 @@ var stationsMapConstructed=false;
 var stationResultsMapConstructed=false;
 var numOfMarkerToDisplayCount=20;
 var labelFlag="Bike";
+var latlng="";
+var selectedStationLatitude="";
+var selectedStationLongitude="";
+
 
 
 function getDataFromApi(callback) {
@@ -48,7 +52,7 @@ function displayStationData(results) {
 // }
 //   alert("Station Map "+stationsMap.get("72").name);
   if (results.data.stations) {
-   resultElement+="<option value=''></option>";
+   resultElement+="<option value=''>Select Station</option>";
    results.data.stations.forEach(function(station) {
       resultElement+="<option value='"+station.station_id+"'>"+station.name+"</option>";
     });
@@ -110,6 +114,11 @@ function userSubmit() {
 
   $('.stationList').change(function(){
     stationId=$(this).val();
+    var stationDetails=stationsMap.get(stationId);
+    selectedStationLatitude=stationDetails.lat;
+    selectedStationLongitude=stationDetails.lon;
+
+    latlng = new google.maps.LatLng(selectedStationLatitude, selectedStationLongitude);
     createMap();
     showStationResults();
 
@@ -149,7 +158,7 @@ function displayMarkers(){
    if(stationId!=0)
    {
     var stationDetails=stationsMap.get(stationId);
-    var latlng = new google.maps.LatLng(stationDetails.lat, stationDetails.lon);
+    latlng = new google.maps.LatLng(stationDetails.lat, stationDetails.lon);
     var currStationId = stationId;
     var color="blue";
 
@@ -182,7 +191,11 @@ function displayMarkers(){
       var name = stations[i].name;
       var numBikesAvailable = stationResultsMap.get(currStationId).num_bikes_available;
       var numDocksAvailable = stationResultsMap.get(currStationId).num_docks_available;
-      var label=numBikesAvailable+"";
+      var label="";
+        if(labelFlag=="Bike")
+        label=numBikesAvailable+"";
+      else if(labelFlag=="Dock")
+        label=numDocksAvailable+"";
       
 
       createMarker(latlng, name, numBikesAvailable, numDocksAvailable,label,color);
@@ -207,15 +220,21 @@ function createMarker(latlng, name, numBikesAvailable, numDocksAvailable,label,c
     //     new google.maps.Size(21, 34),
     //     new google.maps.Point(0,0),
     //     new google.maps.Point(10, 34));
-    var icon = "";
-    icon = "http://maps.google.com/mapfiles/ms/icons/" + color + ".png";
+    var url = "";
+    url = "http://maps.google.com/mapfiles/ms/icons/" + color + ".png";
+
+     var image = {
+        url: url, // image is 512 x 512
+        scaledSize : new google.maps.Size(50, 50),
+    };
+
    var marker = new google.maps.Marker({
       map: map,
       position: latlng,
       label:label,
       title: name,
       animation: google.maps.Animation.DROP,
-      icon: new google.maps.MarkerImage(icon)
+      icon: image
       
    });
 
@@ -227,7 +246,7 @@ function createMarker(latlng, name, numBikesAvailable, numDocksAvailable,label,c
       // Variable to define the HTML content to be inserted in the infowindow
       var iwContent = '<div id="iw_container">' +
       '<div class="iw_title">' + name + '</div>' +
-      '<div class="iw_content"> Bikes:' + numBikesAvailable + '<br />' +"Docks:"+
+      '<div class="iw_content"> Bikes: ' + numBikesAvailable + '<br />' +"Docks: "+
       numDocksAvailable + '</div></div>';
       
       // including content to the infowindow
@@ -239,13 +258,39 @@ function createMarker(latlng, name, numBikesAvailable, numDocksAvailable,label,c
 }
 
 function createMap() {
-   var mapOptions = {
-      // center: new google.maps.LatLng(latitude,longitude),
+  if(latlng!="")
+  {
+      var mapOptions = {
+      center: new google.maps.LatLng(selectedStationLatitude,selectedStationLongitude),
+      zoom: 9,
+      radius:1000,
+      mapTypeId: google.maps.MapTypeId.ROADMAP,
+   };
+   map = new google.maps.Map(document.getElementById('map'), mapOptions);
+   var circle = new google.maps.Circle({
+    center: latlng,
+    radius: 1000,
+    map: map,
+
+    strokeColor: '#4cf441',
+            strokeOpacity: 0.8,
+            strokeWeight: 2,
+            fillColor: '#4cf441',
+            fillOpacity: 0.8,
+});
+  }
+  else
+  {
+    var mapOptions = {
+      
       zoom: 9,
       mapTypeId: google.maps.MapTypeId.ROADMAP,
    };
-
    map = new google.maps.Map(document.getElementById('map'), mapOptions);
+  }
+ 
+
+   
 
    // a new Info Window is created
    infoWindow = new google.maps.InfoWindow();
@@ -255,14 +300,21 @@ function createMap() {
       infoWindow.close();
    });
 
+var bikecolor="white";
+var dockcolor="white";
+      if(labelFlag=="Bike")
+        bikecolor="grey";
+      else if(labelFlag=="Dock")
+        dockcolor="grey";
+
           var centerControlDiv = document.createElement('div');
-        var centerControl = new BikeControl(centerControlDiv, map);
+        var centerControl = new BikeControl(centerControlDiv, map,bikecolor);
 
         centerControlDiv.index = 1;
         map.controls[google.maps.ControlPosition.TOP_RIGHT].push(centerControlDiv);
 
          var dockControlDiv = document.createElement('div');
-        var dockControl = new DockControl(dockControlDiv, map);
+        var dockControl = new DockControl(dockControlDiv, map,dockcolor);
 
         dockControl.index = 1;
         map.controls[google.maps.ControlPosition.TOP_RIGHT].push(dockControlDiv);
@@ -303,11 +355,11 @@ function geolocationSuccess(latitude,longitude) {
         mapObject.fitBounds(circle.getBounds());
       }
 
-      function BikeControl(controlDiv, map) {
+      function BikeControl(controlDiv, map,color) {
 
         // Set CSS for the control border.
         var controlUI = document.createElement('div');
-        controlUI.style.backgroundColor = '#fff';
+        controlUI.style.backgroundColor = color;
         controlUI.style.border = '2px solid #fff';
         controlUI.style.borderRadius = '3px';
         controlUI.style.boxShadow = '0 2px 6px rgba(0,0,0,.3)';
@@ -337,11 +389,11 @@ function geolocationSuccess(latitude,longitude) {
       }
 
 
-      function DockControl(controlDiv, map) {
+      function DockControl(controlDiv, map,color) {
 
         // Set CSS for the control border.
         var controlUI = document.createElement('div');
-        controlUI.style.backgroundColor = '#fff';
+        controlUI.style.backgroundColor = color;
         controlUI.style.border = '2px solid #fff';
         controlUI.style.borderRadius = '3px';
         controlUI.style.boxShadow = '0 2px 6px rgba(0,0,0,.3)';
