@@ -25,7 +25,7 @@
 }
 
 #hidden1{
-    position: fixed;
+    position: relative;
     height: 55px;
     width: 100%;
     border-bottom: 1px solid #d4d4d4;
@@ -231,7 +231,7 @@ button{
 
 
 .results{
-    margin-top: 80px;
+    margin-top: 30px;
 }
 
 #fieldset{
@@ -282,7 +282,7 @@ h1{
 }
 
 .form-group{
-    padding-left: 0px;
+    margin-bottom: -15px;
 }
 .modal-content {
     background-image: url("../img/bankBG5.jpg");
@@ -339,15 +339,13 @@ display:block !important;
 
 
 
-    .tabulator-cell:nth-of-type(1):before { content: "Name" !important; }
-    .tabulator-cell:nth-of-type(2):before { content: "Gender" !important; }
-    .tabulator-cell:nth-of-type(3):before { content: "Email" !important; }
-    .tabulator-cell:nth-of-type(4):before { content: "Age" !important; }
-    .tabulator-cell:nth-of-type(5):before { content: "Company" !important; }
-    .tabulator-cell:nth-of-type(6):before { content: "Phone" !important; }
-    .tabulator-cell:nth-of-type(7):before { content: "Address" !important; }
-    .tabulator-cell:nth-of-type(8):before { content: "ZipCode" !important; }
-    .tabulator-cell:nth-of-type(9):before { content: "Country" !important; }
+    .tabulator-cell:nth-of-type(1):before { content: "Ride Date" !important; }
+    .tabulator-cell:nth-of-type(2):before { content: "Station From" !important; }
+    .tabulator-cell:nth-of-type(3):before { content: "Station To" !important; }
+    .tabulator-cell:nth-of-type(4):before { content: "Cost" !important; }
+    .tabulator-cell:nth-of-type(5):before { content: "Payment Type" !important; }
+    .tabulator-cell:nth-of-type(6):before { content: "Bike Type" !important; }
+
 
 .container-fluid{
 padding-left: 0px;
@@ -435,31 +433,31 @@ padding-left: 0px;
     {
         background-color: #c7f441 !important;
     }
-    .form1:after{
-        background-color: #c7f441 !important;
-        /*position:absolute;*/
-        content:"";
-        left:0;
-        right:0;
-        height:10px;
-        top:80px;
+    /*.form1:after{*/
+        /*background-color: #c7f441 !important;*/
+        /*!*position:absolute;*!*/
+        /*content:"";*/
+        /*left:0;*/
+        /*right:0;*/
+        /*height:10px;*/
+        /*top:80px;*/
 
 
-    }
-    .form1:before{
-        background-color: #c7f441 !important;
-        /*position:absolute;*/
-        content:"";
-        left:0;
-        right:0;
-        height:34px;
-        top:110px;
+    /*}*/
+    /*.form1:before{*/
+        /*background-color: #c7f441 !important;*/
+        /*!*position:absolute;*!*/
+        /*content:"";*/
+        /*left:0;*/
+        /*right:0;*/
+        /*height:34px;*/
+        /*top:110px;*/
 
 
     }
     .form1{
 
-        background-color:yellow;
+        background-color: #c7f441 !important;
     }
         #logoImg{
             margin:0px;

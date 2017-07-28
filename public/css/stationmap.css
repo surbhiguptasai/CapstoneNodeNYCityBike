@@ -15,7 +15,7 @@ background-color: #c7f441;
   right:0;
   height:10px;
   top:60px;
-  
+
 
 }
 .form-background:before{
@@ -26,7 +26,7 @@ background-color: #c7f441;
   right:0;
   height:44px;
   top:110px;
-  
+
 
 }
 .js-search-form{
@@ -40,7 +40,7 @@ background-color: #c7f441;
 
     background-color: lightgrey;
     margin-top: 50px;
-    
+
     border: 25px solid green;
     padding: 25px;
     margin: 25px;
@@ -57,12 +57,12 @@ p{
 
 	
 }
-  a>img{
-	text-align: left;
-	display: block;
-	margin: 20px;
-}
-a:hover {
-    color: hotpink;
-}
+  /*a>img{*/
+	/*text-align: left;*/
+	/*display: block;*/
+	/*margin: 20px;*/
+/*}*/
+/*a:hover {*/
+    /*color: hotpink;*/
+/*}*/
 
