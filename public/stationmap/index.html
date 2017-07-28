@@ -2,11 +2,11 @@
 <html>
 <head>
   <title>NYC Bike</title>
-  <meta name="description" content="My Contacts helps you to 
-      manage your contacts.">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="NYC Bike helps you to find and manage  your bike ride.">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/4.2.0/normalize.min.css">
   <link href="https://fonts.googleapis.com/css?family=Roboto:400,700" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
   <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed:400i,700i" rel="stylesheet">
   <link rel="stylesheet" type="text/css" href="../css/float-grid.css">
 
@@ -22,6 +22,8 @@
     </style>
 </head>
 <body>
+
+<div class="container-fluid padding0">
  <div id="nav-bar-wrap">
     <div id="nav-bar">
       <a href="../"><header class="site-title">NYC Bike</header></a>
@@ -55,16 +57,20 @@
       </div>
     </div>
   </div>
+</div>
 
-
-
+<div class="container-fluid padding0 ">
  <div class="form-background"> 
 <div class="js-search-form">
 
+
+    <div class="row xs-12">
   <select class="stationList" >
   <option value="">Select Station</option>
   </select>
+</div>
 
+    <div class="row xs-12">
   <select class="pinsDropDown" >
   <option value="">Select No. of Stations</option>
   <option value="10">10</option>
@@ -73,14 +79,27 @@
   <option value="100">100</option>
   <option value="All">All</option>
   </select>
+    </div>
+
+
+
 </div>
 </div>
- <input type="hidden" id="userVal" value="" />
+</div>
+
+<div class="container-fluid padding0     ">
 <div id="map"></div>
+</div>
 
 
+
+    <script src="https://code.jquery.com/jquery-3.1.0.js"></script>
+ <script
+         src="https://code.jquery.com/ui/1.12.0/jquery-ui.js"
+ ></script>
+ <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
  
-  <script src="https://code.jquery.com/jquery-3.1.0.js"></script>
+
    <script type="text/javascript" src="jquerysearch.js"></script>
    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDFd-29p6LxJ3sq0PIcgLFSB28vPOs9LpM&callback=initMap"></script>
 
