@@ -5,7 +5,31 @@ mongoose.Promise = global.Promise;
 
 // this is our schema to represent a user
 
+const  ridesSchema = mongoose.Schema({
 
+    rideDate: {type: String},
+    stationFrom: {type: String},
+    stationTo: {type: String},
+    cost: {type: String},
+    paymentType:{type: String},
+    bikeType:{type: String}
+
+});
+
+ridesSchema.methods.apiRepr = function() {
+
+    return {
+        id: this._id,
+        rideDate: this.rideDate,
+        stationFrom: this.stationFrom,
+        stationTo: this.stationTo,
+        cost:this.cost,
+        paymentType:this.paymentType,
+        bikeType: this.bikeType
+    };
+}
+
+const RideDetail = mongoose.model('RideDetail', ridesSchema,'rideDetails');
 // note that all instance methods and virtual properties on our
 // schema must be defined *before* we make the call to `.model`.
 
@@ -17,13 +41,15 @@ const  userContacts = mongoose.Schema({
     password: {
     type: String,
     required: true
-  }
+  },
+    rides:[ridesSchema]
 
 });
 
 userContacts.methods.apiRepr = function() {
   return {
-    username: this.userId 
+    username: this.userId,
+      rides: this.rides
   };
 }
 
@@ -41,4 +67,4 @@ userContacts.statics.hashPassword = function(password) {
 
 const UserContact = mongoose.model('UserContact', userContacts,'userContacts');
 
-module.exports = {UserContact};
+module.exports = {RideDetail,UserContact};

@@ -1,4 +1,737 @@
 {
   "userId":"surbhi",
-  "password":"$2a$10$WdrorKy.jCnjOmMZOEq3/.3xojmc/2SXbZ8.H9hdNKhZrVSltORF2"
+  "password":"$2a$10$WdrorKy.jCnjOmMZOEq3/.3xojmc/2SXbZ8.H9hdNKhZrVSltORF2",
+  rides:
+  [
+    {
+      "_id": "597b3f86b4d295c7066cb7e8",
+      "rideDate": "27-Jul-2017",
+      "stationFrom": "W52St&amp;11Ave",
+      "stationTo": "MacDougalSt&amp;PrinceSt",
+      "cost": "2,874.48",
+      "paymentType": "CreditCard",
+      "bikeType": "BMX Bicycles"
+    },
+    {
+      "_id": "597b3f86b01cb39e9c3cf512",
+      "rideDate": "27-Jul-2017",
+      "stationFrom": "E47St&amp;2Ave",
+      "stationTo": "NassauSt&amp;NavySt",
+      "cost": "1,777.14",
+      "paymentType": "CreditCard",
+      "bikeType": "City Bike"
+    },
+    {
+      "_id": "597b3f869c9e21ee79b20f50",
+      "rideDate": "27-Jul-2017",
+      "stationFrom": "HenrySt&amp;AtlanticAve",
+      "stationTo": "FranklinSt&amp;WBroadway",
+      "cost": "2,894.59",
+      "paymentType": "Cash",
+      "bikeType": "29er Mountain Bikes"
+    },
+    {
+      "_id": "597b3f868209f994930a689c",
+      "rideDate": "27-Jul-2017",
+      "stationFrom": "AtlanticAve&amp;FortGreenePl",
+      "stationTo": "MacDougalSt&amp;PrinceSt",
+      "cost": "3,076.91",
+      "paymentType": "Cash",
+      "bikeType": "BMX Bicycles"
+    },
+    {
+      "_id": "597b3f8626c9e5c442e0b6f8",
+      "rideDate": "27-Jul-2017",
+      "stationFrom": "MacDougalSt&amp;PrinceSt",
+      "stationTo": "MacDougalSt&amp;PrinceSt",
+      "cost": "3,403.59",
+      "paymentType": "CreditCard",
+      "bikeType": "Freeride Mountain Bikes"
+    },
+    {
+      "_id": "597b3f86a15740b10a10e8a4",
+      "rideDate": "27-Jul-2017",
+      "stationFrom": "HudsonSt&amp;ReadeSt",
+      "stationTo": "ClevelandPl&amp;SpringSt",
+      "cost": "3,883.99",
+      "paymentType": "Cash",
+      "bikeType": "Folding Bikes"
+    },
+    {
+      "_id": "597b3f8665af4e0024595fe3",
+      "rideDate": "27-Jul-2017",
+      "stationFrom": "W17St&amp;8Ave",
+      "stationTo": "LexingtonAve&amp;ClassonAve",
+      "cost": "3,032.45",
+      "paymentType": "Cash",
+      "bikeType": "Fixed Gear Bicycles"
+    },
+    {
+      "_id": "597b3f862a7c0277910c4ae5",
+      "rideDate": "27-Jul-2017",
+      "stationFrom": "W17St&amp;8Ave",
+      "stationTo": "LaGuardiaPl&amp;W3St",
+      "cost": "2,600.02",
+      "paymentType": "Cash",
+      "bikeType": "Freeride Mountain Bikes"
+    },
+    {
+      "_id": "597b3f8650db01f4ef0d4544",
+      "rideDate": "27-Jul-2017",
+      "stationFrom": "NassauSt&amp;NavySt",
+      "stationTo": "ClintonSt&amp;JoralemonSt",
+      "cost": "3,087.52",
+      "paymentType": "CreditCard",
+      "bikeType": "Tandem Bikes"
+    },
+    {
+      "_id": "597b3f8602d398b175196202",
+      "rideDate": "27-Jul-2017",
+      "stationFrom": "W52St&amp;11Ave",
+      "stationTo": "W17St&amp;8Ave",
+      "cost": "2,821.00",
+      "paymentType": "CreditCard",
+      "bikeType": "Fixed Gear Bicycles"
+    },
+    {
+      "_id": "597b3f86b5da18a003ad7a17",
+      "rideDate": "27-Jul-2017",
+      "stationFrom": "LaGuardiaPl&amp;W3St",
+      "stationTo": "ClevelandPl&amp;SpringSt",
+      "cost": "2,558.04",
+      "paymentType": "Cash",
+      "bikeType": "XC Bike"
+    },
+    {
+      "_id": "597b3f86aa513be13622ea5f",
+      "rideDate": "27-Jul-2017",
+      "stationFrom": "WarrenSt&amp;ChurchSt",
+      "stationTo": "ClintonSt&amp;JoralemonSt",
+      "cost": "3,914.23",
+      "paymentType": "CreditCard",
+      "bikeType": "XC Bike"
+    },
+    {
+      "_id": "597b3f865c6a67c0d064897b",
+      "rideDate": "27-Jul-2017",
+      "stationFrom": "FranklinSt&amp;WBroadway",
+      "stationTo": "WarrenSt&amp;ChurchSt",
+      "cost": "2,500.76",
+      "paymentType": "CreditCard",
+      "bikeType": "Fixed Gear Bicycles"
+    },
+    {
+      "_id": "597b3f8662f864b9c13f7c90",
+      "rideDate": "27-Jul-2017",
+      "stationFrom": "HudsonSt&amp;ReadeSt",
+      "stationTo": "ClevelandPl&amp;SpringSt",
+      "cost": "3,311.02",
+      "paymentType": "CreditCard",
+      "bikeType": "Folding Bikes"
+    },
+    {
+      "_id": "597b3f862d91e98a12640718",
+      "rideDate": "27-Jul-2017",
+      "stationFrom": "ParkAve&amp;StEdwardsSt",
+      "stationTo": "HenrySt&amp;AtlanticAve",
+      "cost": "1,624.32",
+      "paymentType": "Cash",
+      "bikeType": "Road Bicycles"
+    },
+    {
+      "_id": "597b3f86658f460068dc3e8f",
+      "rideDate": "27-Jul-2017",
+      "stationFrom": "W17St&amp;8Ave",
+      "stationTo": "FranklinSt&amp;WBroadway",
+      "cost": "2,540.71",
+      "paymentType": "CreditCard",
+      "bikeType": "Mountain Bikes"
+    },
+    {
+      "_id": "597b3f864c0931fa28fc975f",
+      "rideDate": "27-Jul-2017",
+      "stationFrom": "HenrySt&amp;AtlanticAve",
+      "stationTo": "AtlanticAve&amp;FortGreenePl",
+      "cost": "2,720.57",
+      "paymentType": "CreditCard",
+      "bikeType": "E-Bikes"
+    },
+    {
+      "_id": "597b3f868938eb20dfb158ef",
+      "rideDate": "27-Jul-2017",
+      "stationFrom": "StJamesPl&amp;PearlSt",
+      "stationTo": "ClevelandPl&amp;SpringSt",
+      "cost": "2,869.53",
+      "paymentType": "Cash",
+      "bikeType": "City Bike"
+    },
+    {
+      "_id": "597b3f86ce837594a90c0a78",
+      "rideDate": "27-Jul-2017",
+      "stationFrom": "ParkAve&amp;StEdwardsSt",
+      "stationTo": "HudsonSt&amp;ReadeSt",
+      "cost": "2,088.39",
+      "paymentType": "Cash",
+      "bikeType": "City Bike"
+    },
+    {
+      "_id": "597b3f86e08a9e462918aa8b",
+      "rideDate": "27-Jul-2017",
+      "stationFrom": "E40St&amp;5Ave",
+      "stationTo": "AtlanticAve&amp;FortGreenePl",
+      "cost": "3,462.41",
+      "paymentType": "Cash",
+      "bikeType": "Special Bicycles"
+    },
+    {
+      "_id": "597b3f865704b246eb182764",
+      "rideDate": "27-Jul-2017",
+      "stationFrom": "StJamesPl&amp;PearlSt",
+      "stationTo": "HudsonSt&amp;ReadeSt",
+      "cost": "1,949.71",
+      "paymentType": "Cash",
+      "bikeType": "BMX Bicycles"
+    },
+    {
+      "_id": "597b3f86e5bd8bbd0ef68116",
+      "rideDate": "27-Jul-2017",
+      "stationFrom": "BarrowSt&amp;HudsonSt",
+      "stationTo": "E40St&amp;5Ave",
+      "cost": "2,469.51",
+      "paymentType": "CreditCard",
+      "bikeType": "Cruisers Bicycles"
+    },
+    {
+      "_id": "597b3f8695fc6c303b02d98a",
+      "rideDate": "27-Jul-2017",
+      "stationFrom": "WarrenSt&amp;ChurchSt",
+      "stationTo": "NassauSt&amp;NavySt",
+      "cost": "3,111.43",
+      "paymentType": "CreditCard",
+      "bikeType": "Women Bikes"
+    },
+    {
+      "_id": "597b3f863495742ea67b6f10",
+      "rideDate": "27-Jul-2017",
+      "stationFrom": "HenrySt&amp;AtlanticAve",
+      "stationTo": "ClevelandPl&amp;SpringSt",
+      "cost": "2,868.36",
+      "paymentType": "Cash",
+      "bikeType": "Kids Bikes"
+    },
+    {
+      "_id": "597b3f86cfefa877319c3f96",
+      "rideDate": "27-Jul-2017",
+      "stationFrom": "ClintonSt&amp;JoralemonSt",
+      "stationTo": "HenrySt&amp;AtlanticAve",
+      "cost": "1,197.84",
+      "paymentType": "Cash",
+      "bikeType": "29er Mountain Bikes"
+    },
+    {
+      "_id": "597b3f86fcd27e81bea900b6",
+      "rideDate": "27-Jul-2017",
+      "stationFrom": "BarrowSt&amp;HudsonSt",
+      "stationTo": "NassauSt&amp;NavySt",
+      "cost": "3,267.84",
+      "paymentType": "Cash",
+      "bikeType": "Chainless Bicycles"
+    },
+    {
+      "_id": "597b3f86318447a59a61ff0b",
+      "rideDate": "27-Jul-2017",
+      "stationFrom": "NassauSt&amp;NavySt",
+      "stationTo": "FranklinSt&amp;WBroadway",
+      "cost": "2,826.01",
+      "paymentType": "CreditCard",
+      "bikeType": "Folding Bikes"
+    },
+    {
+      "_id": "597b3f865d259d8c0e3a8509",
+      "rideDate": "27-Jul-2017",
+      "stationFrom": "E40St&amp;5Ave",
+      "stationTo": "LaGuardiaPl&amp;W3St",
+      "cost": "2,111.41",
+      "paymentType": "Cash",
+      "bikeType": "BMX Bicycles"
+    },
+    {
+      "_id": "597b3f86f034c92bc32903b0",
+      "rideDate": "27-Jul-2017",
+      "stationFrom": "NassauSt&amp;NavySt",
+      "stationTo": "E47St&amp;2Ave",
+      "cost": "3,542.76",
+      "paymentType": "CreditCard",
+      "bikeType": "Downhill Mountain Bikes"
+    },
+    {
+      "_id": "597b3f86ca366c2c10a9fdce",
+      "rideDate": "27-Jul-2017",
+      "stationFrom": "W52St&amp;11Ave",
+      "stationTo": "NassauSt&amp;NavySt",
+      "cost": "1,716.37",
+      "paymentType": "CreditCard",
+      "bikeType": "XC Bike"
+    },
+    {
+      "_id": "597b3f866aa505cd8e5032a0",
+      "rideDate": "27-Jul-2017",
+      "stationFrom": "LexingtonAve&amp;ClassonAve",
+      "stationTo": "E47St&amp;2Ave",
+      "cost": "1,786.62",
+      "paymentType": "Cash",
+      "bikeType": "Women Bikes"
+    },
+    {
+      "_id": "597b3f863112836050295d37",
+      "rideDate": "27-Jul-2017",
+      "stationFrom": "BarrowSt&amp;HudsonSt",
+      "stationTo": "AtlanticAve&amp;FortGreenePl",
+      "cost": "3,399.13",
+      "paymentType": "Cash",
+      "bikeType": "Special Bicycles"
+    },
+    {
+      "_id": "597b3f86eadda2e51a90a8e8",
+      "rideDate": "27-Jul-2017",
+      "stationFrom": "WarrenSt&amp;ChurchSt",
+      "stationTo": "NassauSt&amp;NavySt",
+      "cost": "3,745.97",
+      "paymentType": "CreditCard",
+      "bikeType": "City Bike"
+    },
+    {
+      "_id": "597b3f86e31f66dcdf7a936b",
+      "rideDate": "27-Jul-2017",
+      "stationFrom": "BarrowSt&amp;HudsonSt",
+      "stationTo": "ClevelandPl&amp;SpringSt",
+      "cost": "2,727.24",
+      "paymentType": "Cash",
+      "bikeType": "Touring Bikes"
+    },
+    {
+      "_id": "597b3f86d48eb35e93f52cdf",
+      "rideDate": "27-Jul-2017",
+      "stationFrom": "MacDougalSt&amp;PrinceSt",
+      "stationTo": "ClevelandPl&amp;SpringSt",
+      "cost": "2,537.13",
+      "paymentType": "CreditCard",
+      "bikeType": "Tandem Bikes"
+    },
+    {
+      "_id": "597b3f868a9d23654fe7c1f4",
+      "rideDate": "27-Jul-2017",
+      "stationFrom": "E2St&amp;AvenueC",
+      "stationTo": "StJamesPl&amp;PearlSt",
+      "cost": "3,389.09",
+      "paymentType": "CreditCard",
+      "bikeType": "Fixed Gear Bicycles"
+    },
+    {
+      "_id": "597b3f862685ab5a430d00f2",
+      "rideDate": "27-Jul-2017",
+      "stationFrom": "E40St&amp;5Ave",
+      "stationTo": "E40St&amp;5Ave",
+      "cost": "2,376.32",
+      "paymentType": "CreditCard",
+      "bikeType": "Hybrid Bicycles"
+    },
+    {
+      "_id": "597b3f86b0af24dfc1939f46",
+      "rideDate": "27-Jul-2017",
+      "stationFrom": "HenrySt&amp;AtlanticAve",
+      "stationTo": "HenrySt&amp;AtlanticAve",
+      "cost": "3,941.95",
+      "paymentType": "CreditCard",
+      "bikeType": "Tandem Bikes"
+    },
+    {
+      "_id": "597b3f862f21071431dce02d",
+      "rideDate": "27-Jul-2017",
+      "stationFrom": "StJamesPl&amp;PearlSt",
+      "stationTo": "NassauSt&amp;NavySt",
+      "cost": "2,044.68",
+      "paymentType": "CreditCard",
+      "bikeType": "Special Bicycles"
+    },
+    {
+      "_id": "597b3f86915e9589d2be3269",
+      "rideDate": "27-Jul-2017",
+      "stationFrom": "BarrowSt&amp;HudsonSt",
+      "stationTo": "W52St&amp;11Ave",
+      "cost": "2,670.05",
+      "paymentType": "Cash",
+      "bikeType": "Cruisers Bicycles"
+    }
+  ]
+}
+
+
+
+{
+  "userId":"guest",
+  "password":"$2a$10$5Pr8yrQmejJhdgh8wizpUedShkVc3rBI53gKKqUnaKgTEP6N3kkJC",
+  rides:
+  [
+    {
+      "_id": "597b419ac5f8ec859d8e0463",
+      "rideDate": "20-Jul-2017",
+      "stationFrom": "E40St&amp;5Ave",
+      "stationTo": "NassauSt&amp;NavySt",
+      "cost": "3,543.33",
+      "paymentType": "Cash",
+      "bikeType": "E-Bikes"
+    },
+    {
+      "_id": "597b419a1153a1d06779f7b7",
+      "rideDate": "23-Jul-2017",
+      "stationFrom": "ClevelandPl&amp;SpringSt",
+      "stationTo": "BarrowSt&amp;HudsonSt",
+      "cost": "1,246.28",
+      "paymentType": "CreditCard",
+      "bikeType": "Women Bikes"
+    },
+    {
+      "_id": "597b419aea371f00d4538a81",
+      "rideDate": "17-Jul-2017",
+      "stationFrom": "WarrenSt&amp;ChurchSt",
+      "stationTo": "WarrenSt&amp;ChurchSt",
+      "cost": "2,080.54",
+      "paymentType": "CreditCard",
+      "bikeType": "Mountain Bikes"
+    },
+    {
+      "_id": "597b419ac6f26e6afb591037",
+      "rideDate": "18-Jul-2017",
+      "stationFrom": "E47St&amp;2Ave",
+      "stationTo": "E2St&amp;AvenueC",
+      "cost": "3,807.83",
+      "paymentType": "CreditCard",
+      "bikeType": "E-Bikes"
+    },
+    {
+      "_id": "597b419ae14ffb597547e38b",
+      "rideDate": "26-Jul-2017",
+      "stationFrom": "BarrowSt&amp;HudsonSt",
+      "stationTo": "ClintonSt&amp;JoralemonSt",
+      "cost": "1,713.66",
+      "paymentType": "Cash",
+      "bikeType": "Folding Bikes"
+    },
+    {
+      "_id": "597b419ac8b79582d258e07e",
+      "rideDate": "27-Jul-2017",
+      "stationFrom": "W52St&amp;11Ave",
+      "stationTo": "StJamesPl&amp;PearlSt",
+      "cost": "2,399.55",
+      "paymentType": "Cash",
+      "bikeType": "Special Bicycles"
+    },
+    {
+      "_id": "597b419a6088df8f6ee85493",
+      "rideDate": "19-Jul-2017",
+      "stationFrom": "E40St&amp;5Ave",
+      "stationTo": "W17St&amp;8Ave",
+      "cost": "1,578.21",
+      "paymentType": "Cash",
+      "bikeType": "XC Bike"
+    },
+    {
+      "_id": "597b419a68d8599c36257120",
+      "rideDate": "20-Jul-2017",
+      "stationFrom": "MacDougalSt&amp;PrinceSt",
+      "stationTo": "W52St&amp;11Ave",
+      "cost": "2,428.05",
+      "paymentType": "Cash",
+      "bikeType": "BMX Bicycles"
+    },
+    {
+      "_id": "597b419a6c56cf6ed26a4dc9",
+      "rideDate": "26-Jul-2017",
+      "stationFrom": "W52St&amp;11Ave",
+      "stationTo": "ClintonSt&amp;JoralemonSt",
+      "cost": "2,699.78",
+      "paymentType": "Cash",
+      "bikeType": "Mountain Bikes"
+    },
+    {
+      "_id": "597b419a397d8a6bea94b4a5",
+      "rideDate": "15-Jul-2017",
+      "stationFrom": "AtlanticAve&amp;FortGreenePl",
+      "stationTo": "ParkAve&amp;StEdwardsSt",
+      "cost": "1,789.74",
+      "paymentType": "Cash",
+      "bikeType": "City Bike"
+    },
+    {
+      "_id": "597b419a807662026180304b",
+      "rideDate": "26-Jul-2017",
+      "stationFrom": "LexingtonAve&amp;ClassonAve",
+      "stationTo": "E2St&amp;AvenueC",
+      "cost": "3,946.52",
+      "paymentType": "Cash",
+      "bikeType": "Folding Bikes"
+    },
+    {
+      "_id": "597b419a1a6a1e16ac25e6a8",
+      "rideDate": "26-Jul-2017",
+      "stationFrom": "HenrySt&amp;AtlanticAve",
+      "stationTo": "ClintonSt&amp;JoralemonSt",
+      "cost": "1,607.81",
+      "paymentType": "Cash",
+      "bikeType": "Kids Bikes"
+    },
+    {
+      "_id": "597b419ae534726744675b55",
+      "rideDate": "20-Jul-2017",
+      "stationFrom": "LaGuardiaPl&amp;W3St",
+      "stationTo": "BarrowSt&amp;HudsonSt",
+      "cost": "2,299.26",
+      "paymentType": "CreditCard",
+      "bikeType": "Tandem Bikes"
+    },
+    {
+      "_id": "597b419af8ccf1b4b2b65f20",
+      "rideDate": "17-Jul-2017",
+      "stationFrom": "LexingtonAve&amp;ClassonAve",
+      "stationTo": "ClintonSt&amp;JoralemonSt",
+      "cost": "2,661.73",
+      "paymentType": "CreditCard",
+      "bikeType": "Fixed Gear Bicycles"
+    },
+    {
+      "_id": "597b419ab3c92d641784af71",
+      "rideDate": "26-Jul-2017",
+      "stationFrom": "E47St&amp;2Ave",
+      "stationTo": "WarrenSt&amp;ChurchSt",
+      "cost": "2,544.04",
+      "paymentType": "CreditCard",
+      "bikeType": "Mountain Bikes"
+    },
+    {
+      "_id": "597b419a3b1fba9d689f5867",
+      "rideDate": "20-Jul-2017",
+      "stationFrom": "WarrenSt&amp;ChurchSt",
+      "stationTo": "W17St&amp;8Ave",
+      "cost": "2,444.72",
+      "paymentType": "CreditCard",
+      "bikeType": "Freeride Mountain Bikes"
+    },
+    {
+      "_id": "597b419a8ff75401bfcf1bba",
+      "rideDate": "19-Jul-2017",
+      "stationFrom": "ClevelandPl&amp;SpringSt",
+      "stationTo": "HudsonSt&amp;ReadeSt",
+      "cost": "2,081.25",
+      "paymentType": "Cash",
+      "bikeType": "Downhill Mountain Bikes"
+    },
+    {
+      "_id": "597b419adf8aece547fe5730",
+      "rideDate": "27-Jul-2017",
+      "stationFrom": "W52St&amp;11Ave",
+      "stationTo": "LexingtonAve&amp;ClassonAve",
+      "cost": "2,843.57",
+      "paymentType": "CreditCard",
+      "bikeType": "BMX Bicycles"
+    },
+    {
+      "_id": "597b419acee03aefe953dd21",
+      "rideDate": "21-Jul-2017",
+      "stationFrom": "LexingtonAve&amp;ClassonAve",
+      "stationTo": "HudsonSt&amp;ReadeSt",
+      "cost": "3,947.90",
+      "paymentType": "CreditCard",
+      "bikeType": "Bicycle with Training Wheels"
+    },
+    {
+      "_id": "597b419aa4372077837d289f",
+      "rideDate": "18-Jul-2017",
+      "stationFrom": "StJamesPl&amp;PearlSt",
+      "stationTo": "HenrySt&amp;AtlanticAve",
+      "cost": "1,555.45",
+      "paymentType": "CreditCard",
+      "bikeType": "Hybrid Bicycles"
+    },
+    {
+      "_id": "597b419ab4ec2a8a88f6babb",
+      "rideDate": "18-Jul-2017",
+      "stationFrom": "BarrowSt&amp;HudsonSt",
+      "stationTo": "ClevelandPl&amp;SpringSt",
+      "cost": "3,757.05",
+      "paymentType": "Cash",
+      "bikeType": "Touring Bikes"
+    },
+    {
+      "_id": "597b419a758a806ec7d2faf5",
+      "rideDate": "15-Jul-2017",
+      "stationFrom": "StJamesPl&amp;PearlSt",
+      "stationTo": "HudsonSt&amp;ReadeSt",
+      "cost": "3,900.26",
+      "paymentType": "CreditCard",
+      "bikeType": "29er Mountain Bikes"
+    },
+    {
+      "_id": "597b419a7577cfad3d5c93d0",
+      "rideDate": "18-Jul-2017",
+      "stationFrom": "W52St&amp;11Ave",
+      "stationTo": "HudsonSt&amp;ReadeSt",
+      "cost": "1,571.67",
+      "paymentType": "Cash",
+      "bikeType": "BMX Bicycles"
+    },
+    {
+      "_id": "597b419a4dc0507f3b2c5e44",
+      "rideDate": "15-Jul-2017",
+      "stationFrom": "LaGuardiaPl&amp;W3St",
+      "stationTo": "HenrySt&amp;AtlanticAve",
+      "cost": "3,122.96",
+      "paymentType": "CreditCard",
+      "bikeType": "Chainless Bicycles"
+    },
+    {
+      "_id": "597b419afff544d4eaba3037",
+      "rideDate": "19-Jul-2017",
+      "stationFrom": "WarrenSt&amp;ChurchSt",
+      "stationTo": "MacDougalSt&amp;PrinceSt",
+      "cost": "1,309.98",
+      "paymentType": "Cash",
+      "bikeType": "Downhill Mountain Bikes"
+    },
+    {
+      "_id": "597b419aee5ab64e19b45b1f",
+      "rideDate": "22-Jul-2017",
+      "stationFrom": "BarrowSt&amp;HudsonSt",
+      "stationTo": "ClevelandPl&amp;SpringSt",
+      "cost": "3,189.50",
+      "paymentType": "CreditCard",
+      "bikeType": "Women Bikes"
+    },
+    {
+      "_id": "597b419a0e4e18c7c6012710",
+      "rideDate": "23-Jul-2017",
+      "stationFrom": "W52St&amp;11Ave",
+      "stationTo": "HenrySt&amp;AtlanticAve",
+      "cost": "2,045.65",
+      "paymentType": "Cash",
+      "bikeType": "Hybrid Bicycles"
+    },
+    {
+      "_id": "597b419ac1eff197c7fd6387",
+      "rideDate": "25-Jul-2017",
+      "stationFrom": "MacDougalSt&amp;PrinceSt",
+      "stationTo": "WarrenSt&amp;ChurchSt",
+      "cost": "1,033.52",
+      "paymentType": "Cash",
+      "bikeType": "Hybrid Bicycles"
+    },
+    {
+      "_id": "597b419a43258e37f12ddc25",
+      "rideDate": "18-Jul-2017",
+      "stationFrom": "WarrenSt&amp;ChurchSt",
+      "stationTo": "LexingtonAve&amp;ClassonAve",
+      "cost": "1,631.95",
+      "paymentType": "CreditCard",
+      "bikeType": "Bicycle with Training Wheels"
+    },
+    {
+      "_id": "597b419ae7e8129b5d2b029e",
+      "rideDate": "17-Jul-2017",
+      "stationFrom": "W52St&amp;11Ave",
+      "stationTo": "ClevelandPl&amp;SpringSt",
+      "cost": "3,486.48",
+      "paymentType": "CreditCard",
+      "bikeType": "29er Mountain Bikes"
+    },
+    {
+      "_id": "597b419a2d3c66cca1165374",
+      "rideDate": "19-Jul-2017",
+      "stationFrom": "LexingtonAve&amp;ClassonAve",
+      "stationTo": "HudsonSt&amp;ReadeSt",
+      "cost": "3,627.19",
+      "paymentType": "Cash",
+      "bikeType": "Hybrid Bicycles"
+    },
+    {
+      "_id": "597b419a0057aef9c5b7e9b0",
+      "rideDate": "23-Jul-2017",
+      "stationFrom": "ParkAve&amp;StEdwardsSt",
+      "stationTo": "W17St&amp;8Ave",
+      "cost": "1,346.22",
+      "paymentType": "Cash",
+      "bikeType": "Mountain Bikes"
+    },
+    {
+      "_id": "597b419aa68cd393815523cf",
+      "rideDate": "16-Jul-2017",
+      "stationFrom": "E47St&amp;2Ave",
+      "stationTo": "LaGuardiaPl&amp;W3St",
+      "cost": "3,037.96",
+      "paymentType": "CreditCard",
+      "bikeType": "Road Bicycles"
+    },
+    {
+      "_id": "597b419a974bfca82d8e55f8",
+      "rideDate": "27-Jul-2017",
+      "stationFrom": "BarrowSt&amp;HudsonSt",
+      "stationTo": "E2St&amp;AvenueC",
+      "cost": "2,554.72",
+      "paymentType": "CreditCard",
+      "bikeType": "Tandem Bikes"
+    },
+    {
+      "_id": "597b419ad7241336c5d78b99",
+      "rideDate": "21-Jul-2017",
+      "stationFrom": "E2St&amp;AvenueC",
+      "stationTo": "NassauSt&amp;NavySt",
+      "cost": "3,065.56",
+      "paymentType": "CreditCard",
+      "bikeType": "Road Bicycles"
+    },
+    {
+      "_id": "597b419afdf7f65e13a26764",
+      "rideDate": "23-Jul-2017",
+      "stationFrom": "NassauSt&amp;NavySt",
+      "stationTo": "ClintonSt&amp;JoralemonSt",
+      "cost": "3,673.07",
+      "paymentType": "Cash",
+      "bikeType": "City Bike"
+    },
+    {
+      "_id": "597b419a8c2beca9747c4210",
+      "rideDate": "23-Jul-2017",
+      "stationFrom": "HudsonSt&amp;ReadeSt",
+      "stationTo": "ClevelandPl&amp;SpringSt",
+      "cost": "3,797.88",
+      "paymentType": "Cash",
+      "bikeType": "City Bike"
+    },
+    {
+      "_id": "597b419a4bd20ea205639100",
+      "rideDate": "26-Jul-2017",
+      "stationFrom": "LexingtonAve&amp;ClassonAve",
+      "stationTo": "WarrenSt&amp;ChurchSt",
+      "cost": "1,965.31",
+      "paymentType": "Cash",
+      "bikeType": "Chainless Bicycles"
+    },
+    {
+      "_id": "597b419aee2b6082599d96a4",
+      "rideDate": "21-Jul-2017",
+      "stationFrom": "HudsonSt&amp;ReadeSt",
+      "stationTo": "HenrySt&amp;AtlanticAve",
+      "cost": "3,970.66",
+      "paymentType": "CreditCard",
+      "bikeType": "Freeride Mountain Bikes"
+    },
+    {
+      "_id": "597b419a60b742c54592a008",
+      "rideDate": "16-Jul-2017",
+      "stationFrom": "NassauSt&amp;NavySt",
+      "stationTo": "ClevelandPl&amp;SpringSt",
+      "cost": "1,506.82",
+      "paymentType": "CreditCard",
+      "bikeType": "Freeride Mountain Bikes"
+    }
+  ]
 }

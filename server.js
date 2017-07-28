@@ -27,10 +27,175 @@ app.use('/users', usersRouter);
 
 
 
+app.post('/rides/add', (req, res) => {
+
+    const requiredFields = [ 'stationFrom','stationTo'];
+for (let i=0; i<requiredFields.length; i++) {
+    const field = requiredFields[i];
+    if (!(field in req.body)) {
+        const message = `Missing \`${field}\` in request body`
+        console.error(message);
+        return res.status(400).send(message);
+    }
+}
+
+UserContact.find({"userId" : req.body.userId}, function (err, users){
+
+    if (!err) {
+        //we can remove a user by Id rather than looping over an array
+        //console.log("users[0] is "+users[0].contacts)
+        var rides=users[0].rides;
+        var newRide={
+            rideDate: req.body.rideDate,
+            stationFrom: req.body.stationFrom,
+            stationTo: req.body.stationTo,
+            cost: req.body.cost,
+            paymentType: req.body.paymentType,
+            bikeType: req.body.bikeType
+        }
+        rides.push(newRide);
+        users[0].rides=rides;
+        users[0].save(function (err) {
+            console.log("Error  is "+err);
+        });
+    }
+
+}).then(userDetail => res.status(201).json(userDetail[0].rides))
+.catch(err => {
+    console.error(err);
+res.status(500).json({error: 'Something went wrong'});
+});
+
+});
+
+
+app.put('/rides/:id', (req, res) => {
+
+    console.log("Inside Put ********");
+    // ensure that the id in the request path and the one in request body match
+    if (!(req.params.id && req.body.id && req.params.id === req.body.id)) {
+    const message = (
+        `Request path id (${req.params.id}) and request body id ` +
+        `(${req.body.id}) must match`);
+    console.error(message);
+    res.status(400).json({message: message});
+}
+
+// we only support a subset of fields being updateable.
+// if the user sent over any of the updatableFields, we udpate those values
+// in document
+UserContact.find({"userId" : req.body.userId}, function (err, users){
+    if (!err) {
+        //we can remove a user by Id rather than looping over an array
+        //console.log("users[0] is "+users[0].contacts)
+        var rides=users[0].rides;
+
+        for (i in rides) {
+            var id= rides[i]._id;
+
+            //console.log("Id is  "+id);
+            if(id==req.params.id)
+            {
+                rides[i].rideDate=req.body.rideDate;
+                rides[i].stationFrom=req.body.stationFrom;
+                rides[i].stationTo=req.body.stationTo;
+                rides[i].cost=req.body.cost;
+                rides[i].paymentType=req.body.paymentType;
+                rides[i].bikeType=req.body.bikeType;
+
+
+            }
+        }
+        users[0].rides=rides;
+        users[0].save(function (err) {
+            // do something
+            console.log("Data Saved Successfully  "+err);
+        });
+    }
+
+}).then(updateData => res.status(201).json(updateData[0].rides))
+.catch(err => res.status(500).json({message: 'Internal server error'}));
+});
+
+
+app.delete('/rides/:id', (req, res) => {
+    console.log("Inside Delete ********");
+    UserContact.find({"userId" : req.body.userId}, function (err, users) {
+    if (!err) {
+        //we can remove a user by Id rather than looping over an array
+        console.log("users[0] is "+users[0].rides)
+
+        var rides=users[0].rides;
+        for (i in rides) {
+            var id= rides[i]._id;
+            if(id==req.params.id)
+            {
+                rides.splice(i,1);
+            }
+        }
+        users[0].rides=rides;
+        //users[0].contacts(contacts).remove();
+        users[0].save(function (err) {
+            // do something
+            console.log("Error  is "+err);
+        });
+    }
+}).exec()
+    .then(() => {
+    console.log(`Deleted users  with id \`${req.params.id}\``);
+res.status(204).end();
+})
+.catch(err => {
+    console.error(err);
+res.status(500).json({error: 'something went terribly wrong'});
+});
+
+
+});
+
+
+app.get('/rides', (req, res) => {
+    console.log("req.query"+JSON.stringify(req.query));
+UserContact
+    .find(
+        req.query
+    )
+    // `exec` returns a promise
+    .exec()
+    // success callback: for each restaurant we got back, we'll
+    // call the `.apiRepr` instance method we've created in
+    // models.js in order to only expose the data we want the API return.
+    .then(rides => {
+    res.json({
+    rides: rides[0].rides.map(
+        (ride) => ride.apiRepr())
+});
+})
+.catch(
+    err => {
+    console.error(err);
+res.status(500).json({message: 'Internal server error'});
+});
+});
+
 // catch-all endpoint if client makes request to non-existent endpoint
 app.use('*', function(req, res) {
   res.status(404).json({message: 'Not Found'});
 });
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 // closeServer needs access to a server object, but that only
 // gets created when `runServer` runs, so we declare `server` here

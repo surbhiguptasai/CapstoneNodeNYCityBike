@@ -324,36 +324,36 @@ var dockcolor="white";
    displayMarkers();
 }
 
-function geolocationSuccess(latitude,longitude) {
-        var userLatLng = new google.maps.LatLng(latitude, longitude);
-        var label1=stationResultsMap.get(stationId).num_bikes_available+"";
-        // Write the formatted address
-        // writeAddressName(userLatLng);
-
-        var myOptions = {
-          zoom : 16,
-          center : userLatLng,
-          mapTypeId : google.maps.MapTypeId.ROADMAP
-        };
-        // Draw the map
-        var mapObject = new google.maps.Map(document.getElementById("map"), myOptions);
-        // Place the marker
-        new google.maps.Marker({
-          map: mapObject,
-          label:label1,
-          position: userLatLng
-        });
-        // Draw a circle around the user position to have an idea of the current localization accuracy
-        var circle = new google.maps.Circle({
-          center: userLatLng,
-          map: mapObject,
-          fillColor: '#0000FF',
-          fillOpacity: 0.5,
-          strokeColor: '#0000FF',
-          strokeOpacity: 1.0
-        });
-        mapObject.fitBounds(circle.getBounds());
-      }
+// function geolocationSuccess(latitude,longitude) {
+//         var userLatLng = new google.maps.LatLng(latitude, longitude);
+//         var label1=stationResultsMap.get(stationId).num_bikes_available+"";
+//         // Write the formatted address
+//         // writeAddressName(userLatLng);
+//
+//         var myOptions = {
+//           zoom : 16,
+//           center : userLatLng,
+//           mapTypeId : google.maps.MapTypeId.ROADMAP
+//         };
+//         // Draw the map
+//         var mapObject = new google.maps.Map(document.getElementById("map"), myOptions);
+//         // Place the marker
+//         new google.maps.Marker({
+//           map: mapObject,
+//           label:label1,
+//           position: userLatLng
+//         });
+//         // Draw a circle around the user position to have an idea of the current localization accuracy
+//         var circle = new google.maps.Circle({
+//           center: userLatLng,
+//           map: mapObject,
+//           fillColor: '#0000FF',
+//           fillOpacity: 0.5,
+//           strokeColor: '#0000FF',
+//           strokeOpacity: 1.0
+//         });
+//         mapObject.fitBounds(circle.getBounds());
+//       }
 
       function BikeControl(controlDiv, map,color) {
 

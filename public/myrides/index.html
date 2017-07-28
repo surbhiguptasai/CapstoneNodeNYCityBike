@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/tabulator/2.11.0/tabulator.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="../css/main.css">
+    <link rel="stylesheet" type="text/css" href="../css/style.css">
+    <title></title>
+</head>
+<body>
+<div class="container-fluid padding0">
+
+    <div id="nav-bar-wrap">
+        <div id="nav-bar">
+            <a href="../"><header class="site-title"><i>NYC Bike</i></header></a>
+            <div class="burger-container">
+                <div class="burger">&#9776;</div>
+                <div class="x">&#735;</div>
+            </div>
+            <div class="nav-items-wrap">
+                <div class="nav-item js-demo" title="Station Map"><a href="">Station Map</a></div>
+                <div class="nav-item js-my-rides" title="My Rides"><div class="nav-button" ><a href="">My Rides</a></div></div>
+
+                <div class="nav-item js-howitworks" title="How it Works">
+                    <a href="">How it Works</a> </div>
+                <div class="nav-item js-explorenyc" title="Explore NYC"><a href="">Explore NYC</a></div>
+                <div class="nav-item" id="loggedinUser"></div>
+
+                <li class="dropdown nav-item js-signin"><a class="dropdown-toggle" href="#sign-in">Account <span class="caret"></span></a>
+
+                    <ul class="dropdown-menu">
+                        <li class="nav-item nav-item-d js-signin"><a  href="#sign-in">Sign in </a>
+
+                        <li class="nav-item nav-item-d js-signup"><a href="#sign-up">Sign up</a></li>
+
+                        <li class="nav-item nav-item-d "><a href="../users/logout" title="Sign out">Sign out</a></li>
+                    </ul>
+                </li>
+                <!-- <div class="nav-item1">User (Surbhi)</div> -->
+
+            </div>
+        </div>
+    </div>
+
+</div>
+
+<div class="container-fluid form1">
+    <div id="hidden1" class="form-group">
+        <button id="save-row" class="btn btn-primary btn-responsive">Save</button>
+        <button id="delete-row" class="btn btn-primary btn-responsive">Delete</button>
+        <button id="add-row" class="btn btn-primary btn-responsive" onclick="document.getElementById('id01').style.display='block'">Post</button>
+        <a id="download-csv"><img src="../img/downloadCSV.jpg" class="image download"></a>
+        <a id="download-json"><img src="../img/downloadJson.png" class="image download"></a></div>
+    <div id="id01" class="modal container-fluid form-horizontal">
+        <form class="modal-content animate form-horizontal"  action="JavaScript:handleAddUser()">
+            <div class="imgcontainer">
+                <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
+                <!-- <img src="img/logo3.jpg" alt="Avatar" class="avatar"> -->
+            </div>
+            <h1 class="form2h1">New Ride</h1>
+            <div>
+                <div class="form-group row">
+                    <div class="col-xs-0 col-md-2"></div>
+                    <label class="labelClass col-xs-12 col-md-4"><b>Ride Date</b> </label>
+                    <input id="rideDate" name="rideDate" type="text" class="inputclass  col-xs-12 col-md-4" placeholder="15-Jul-2017" required autofocus>
+                    <div class=" col-xs-0 col-md-2"></div>
+                </div>
+
+                <div class="form-group row">
+                    <div class="col-xs-0 col-md-2"></div>
+                    <label class="labelClass col-xs-12 col-md-4"><b>Station From</b></label>
+                    <select id="stationFrom" name="stationFrom" type="text" class="inputclass col-xs-12 col-md-4" placeholder="Station">
+                        <option value="SelectStation">Select Station</option>
+                        <!--<option value="male">male</option>-->
+                        <!--<option value="female">female</option>-->
+                    </select>
+                    <div class=" col-xs-0 col-md-2"></div>
+                </div>
+
+                <div class="form-group row">
+                    <div class="col-xs-0 col-md-2"></div>
+                    <label class="labelClass col-xs-12 col-md-4"><b>Station To</b></label>
+                    <select id="stationTo" name="stationTo" type="text" class="inputclass col-xs-12 col-md-4" placeholder="Station">
+                        <option value="SelectStation">Select Station</option>
+                        <!--<option value="male">male</option>-->
+                        <!--<option value="female">female</option>-->
+                    </select>
+                    <div class=" col-xs-0 col-md-2"></div>
+                </div>
+
+
+                <div class="form-group row">
+                    <div class="col-xs-0 col-md-2"></div>
+                    <label class="labelClass col-xs-12 col-md-4"><b>Cost</b></label>
+                    <input id="cost" name="cost" type="email" class="inputclass col-xs-12 col-md-4" placeholder="Cost" required>
+                    <div class=" col-xs-0 col-md-2"></div>
+                </div>
+
+
+
+
+                <div class="form-group row">
+                    <div class="col-xs-0 col-md-2"></div>
+                    <label class="labelClass col-xs-12 col-md-4"><b>Station To</b></label>
+                    <select id="paymentType" name="stationTo" type="text" class="inputclass col-xs-12 col-md-4" placeholder="Payment">
+                        <option value="SelectPaymentType">Select PaymentType</option>
+                        <option value="Cash">Cash</option>
+                        <option value="CreditCard">Credit Card</option>
+                    </select>
+                    <div class=" col-xs-0 col-md-2"></div>
+                </div>
+
+                <div class="form-group row">
+                    <div class="col-xs-0 col-md-2"></div>
+                    <label class="labelClass col-xs-12 col-md-4"><b>Station To</b></label>
+                    <select id="bikeType" name="stationTo" type="text" class="inputclass col-xs-12 col-md-4" placeholder="BikeType">
+                        <option value="SelectBikeType">Select BikeType</option>
+                        <option value="Road Bicycles">Road Bicycles</option>
+                        <option value="Mountain Bikes">Mountain Bikes</option>
+                        <option value="29er Mountain Bikes">29er Mountain Bikes</option>
+                        <option value="XC Bike">XC Bike</option>
+                        <option value="Hybrid Bicycles">Hybrid Bicycles</option>
+                        <option value="Downhill Mountain Bikes">Downhill Mountain Bikes</option>
+                        <option value="BMX Bicycles">BMX Bicycles</option>
+                        <option value="Folding Bikes">Folding Bikes</option>
+                        <option value="E-Bikes">E-Bikes</option>
+                        <option value="Tandem Bikes">Tandem Bikes</option>
+                        <option value="City Bike">City Bike</option>
+                        <option value="Freeride Mountain Bikes">Freeride Mountain Bikes</option>
+                        <option value="Cruisers Bicycles">Cruisers Bicycles</option>
+                        <option value="Touring Bikes">Touring Bikes</option>
+                        <option value="Special Bicycles">Special Bicycles</option>
+                        <option value="Chainless Bicycles">Chainless Bicycles</option>
+                        <option value="Fixed Gear Bicycles">Fixed Gear Bicycles</option>
+                        <option value="Triathlon Bicycle">Triathlon Bicycle</option>
+                        <option value="Kids Bikes">Kids Bikes</option>
+                        <option value="Bicycle with Training Wheels">Bicycle with Training Wheels</option>
+                        <option val<option value="">ue="Women Bikes">Women Bikes</option>
+                    </select>
+                    <div class=" col-xs-0 col-md-2"></div>
+                </div>
+
+
+
+
+            </div>
+
+            <div class="form2btn">
+                <div class="col-xs-12"></div>
+                <button id="userSubmit" type="submit" class="btn btn-primary btn-responsive">Post Ride</button>
+            </div>
+
+        </form>
+
+    </div>
+
+</div>
+<div class="container-fluid results">
+    <div id="showResult"></div>
+</div>
+
+<script src="https://code.jquery.com/jquery-3.1.0.js"></script>
+
+
+<script
+        src="https://code.jquery.com/ui/1.12.0/jquery-ui.js"
+></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/tabulator/2.11.0/tabulator.min.js"></script>
+<script type="text/javascript" src="https://cdn.datatables.net/1.10.15/js/jquery.dataTables.min.js"></script>
+<script type="text/javascript" src="ride_details.js"></script>
+
+<script  src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.3.3/require.min.js"></script>
+<script src="https://www.w3schools.com/lib/w3.js"></script>
+
+<script src="../../menu.js"></script>
+<!--<script src="../../check-login-status.js"></script>-->
+<script src="../../sign-up.js"></script>
+<script>
+    // Get the modal
+    var modal = document.getElementById('id01');
+
+    // When the user clicks anywhere outside of the modal, close it
+    window.onclick = function(event) {
+        if (event.target == modal) {
+            modal.style.display = "none";
+        }
+    }
+    $(document).ready(function() {
+
+
+    } );
+</script>
+</body>
+</html>

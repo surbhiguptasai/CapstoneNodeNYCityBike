@@ -36,7 +36,7 @@ function signInUser(username, password) {
 
 	$.ajax(settings).done(function (response) {
 			if (response.user) {
-				location.href = '/stationmap/';
+				location.href = '/myrides/';
 			}
 			else {
 				$('.js-message').html('Server error.');
@@ -56,7 +56,7 @@ function signInDemoUser(username, password) {
 
 	$.ajax(settings).done(function (response) {
 			if (response.user) {
-				location.href = '/stationmap/';
+				location.href = '/myrides/';
 			}
 			else {
 				$('.js-message').html('Server error.');
@@ -69,7 +69,7 @@ function watchDemoClick() {
 		
 		event.preventDefault();
 		event.stopPropagation();
-		createNewDemoUser();
+        createNewDemoUser();
 		location.href = '/stationmap/';
 	})
 	$('.js-howitworks').click(function(event) {
@@ -99,6 +99,14 @@ function watchDemoClick() {
 		event.stopPropagation();
 		location.href = '/signin/';
 	})
+
+    $('.js-my-rides').click(function(event) {
+
+        event.preventDefault();
+        event.stopPropagation();
+        location.href = '/myrides/';
+
+    })
 
 	
 }

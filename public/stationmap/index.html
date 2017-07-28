@@ -12,7 +12,7 @@
   <link rel="stylesheet" type="text/css" href="../css/main.css">
 
 
-  <link rel="stylesheet" type="text/css" href="jquerysearch.css">
+  <link rel="stylesheet" type="text/css" href="../css/stationmap.css">
       <style type="text/css">
       #map {
         width: auto;
@@ -29,13 +29,28 @@
         <div class="x">&#735;</div>
       </div>
       <div class="nav-items-wrap">
-        <div class="nav-item js-howitworks" title="How it Works"><a href="">How it Works</a></div>
+          <div class="nav-item js-demo" title="Station Map"><div class="nav-button" ><a href="">Station Map</a></div></div>
+          <div class="nav-item js-my-rides" title="My Rides"><a href="">My Rides</a></div>
 
-        <div class="nav-item js-demo" title="Station Map"><div class="nav-button" ><a href="">Station Map</a></div></div>
-        <div class="nav-item js-explorenyc" title="How it Works"><a href="">Explore NYC</a></div>
 
-        <div class="nav-item js-signup" title="sign up"><a href="#sign-up">Sign up</a></div>
-        <div class="nav-item js-signin" title="sign in"><a href="#sign-in"><div >Sign in</div></a></div>
+          <div class="nav-item js-howitworks" title="How it Works">
+              <a href="">How it Works</a> </div>
+
+
+          <div class="nav-item js-explorenyc" title="Explore NYC"><a href="">Explore NYC</a></div>
+          <div class="nav-item" id="loggedinUser"></div>
+
+          <li class="dropdown nav-item js-signin"><a class="dropdown-toggle" href="#sign-in">Account <span class="caret"></span></a>
+
+              <ul class="dropdown-menu">
+                  <li class="nav-item nav-item-d js-signin"><a  href="#sign-in">Sign in </a>
+
+                  <li class="nav-item nav-item-d js-signup"><a href="#sign-up">Sign up</a></li>
+
+                  <li class="nav-item nav-item-d "><a href="../users/logout" title="Sign out">Sign out</a></li>
+              </ul>
+          </li>
+
       </div>
     </div>
   </div>
@@ -59,6 +74,7 @@
   </select>
 </div>
 </div>
+ <input type="hidden" id="userVal" value="" />
 <div id="map"></div>
 
 
@@ -68,10 +84,11 @@
    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDFd-29p6LxJ3sq0PIcgLFSB28vPOs9LpM&callback=initMap"></script>
 
 <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+ <script type="text/javascript" src="../defaultlogin.js"></script>
    <script src="../../menu.js"></script>
-  <script src="../../check-login-status.js"></script>
+  <!--<script src="../../check-login-status.js"></script>-->
   <script src="../../sign-up.js"></script>
 
-<!--    <script type="text/javascript" src="jqueryMap.js"></script> -->
+
 </body>
 </html>

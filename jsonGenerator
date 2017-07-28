@@ -2,28 +2,29 @@
   '{{repeat(40)}}',
   {
     _id: '{{objectId()}}',
-    "name": {
-    "firstName":'{{firstName()}}',
-    "lastName": "{{surname()}}"
-    },
-    "gender":'{{gender()}}',
-   "username": '{{firstName().toLowerCase()}}',
-    "accountCode":"CHAS{{integer(2000000000000000, 4000000000000000)}}",
-    "branchName":'{{city()}}',
-    "totalAmount":'{{floating(1000, 4000, 2, "$0,0.00")}}',
-    "email":'{{email()}}',
-     "address": {
-    "street": '{{street()}}',
-    "aptNo":' {{integer(100, 999)}}',
-    "city": '{{random("San Jose,CA", "Dallas,TX","San Diego,CA","San Antonio,TX","Phoenix,AZ","Philadelphia,PA","Houston,TX","Chicago,IL","Los Angeles,CA","New York City,NY")}}',
-    "state": ' {{state()}}',
-    "country": ' {{country()}},',
-    "zipcode": '{{integer(10000, 90000)}}'  
-  },
-    "phone":'+1 {{phone()}}',
-    "ssn":'{{integer(100, 999)}}-{{integer(11, 99)}}-{{integer(1000, 9999)}}',
-     "actopendate":'{{date(new Date(2014, 0, 1), new Date(), "dd-MM-YYYY")}}',
-    "acttype": '{{random("Saving", "Checking")}}'
-  
+    "rideDate":'{{random("27-Jul-2017","26-Jul-2017","25-Jul-2017","24-Jul-2017","23-Jul-2017","22-Jul-2017","21-Jul-2017","20-Jul-2017","19-Jul-2017","18-Jul-2017","17-Jul-2017","16-Jul-2017","15-Jul-2017")}}',
+    "stationFrom":'{{random("W52St&amp;11Ave","FranklinSt&amp;WBroadway","StJamesPl&amp;PearlSt","AtlanticAve&amp;FortGreenePl","W17St&amp;8Ave","ParkAve&amp;StEdwardsSt","LexingtonAve&amp;ClassonAve","BarrowSt&amp;HudsonSt","MacDougalSt&amp;PrinceSt","ClintonSt&amp;JoralemonSt","NassauSt&amp;NavySt","HudsonSt&amp;ReadeSt","E2St&amp;AvenueC","ClevelandPl&amp;SpringSt","WarrenSt&amp;ChurchSt","E40St&amp;5Ave","HenrySt&amp;AtlanticAve","LaGuardiaPl&amp;W3St","E47St&amp;2Ave")}}',
+
+
+
+"stationTo":'{{random("W52St&amp;11Ave","FranklinSt&amp;WBroadway","StJamesPl&amp;PearlSt","AtlanticAve&amp;FortGreenePl","W17St&amp;8Ave","ParkAve&amp;StEdwardsSt","LexingtonAve&amp;ClassonAve","BarrowSt&amp;HudsonSt","MacDougalSt&amp;PrinceSt","ClintonSt&amp;JoralemonSt","NassauSt&amp;NavySt","HudsonSt&amp;ReadeSt","E2St&amp;AvenueC","ClevelandPl&amp;SpringSt","WarrenSt&amp;ChurchSt","E40St&amp;5Ave","HenrySt&amp;AtlanticAve","LaGuardiaPl&amp;W3St","E47St&amp;2Ave")}}',
+
+    "cost":'{{floating(1000, 4000, 2, "0,0.00")}}',
+    "paymentType":'{{random("Cash","CreditCard")}}',
+    "bikeType":'{{random("Road Bicycles","Mountain Bikes","29er Mountain Bikes","XC Bike","Hybrid Bicycles","Downhill Mountain Bikes","BMX Bicycles","Folding Bikes","E-Bikes","Tandem Bikes","City Bike","Freeride Mountain Bikes","Cruisers Bicycles","Touring Bikes","Special Bicycles","Chainless Bicycles","Fixed Gear Bicycles","Triathlon Bicycle","Kids Bikes","Bicycle with Training Wheels","Women Bikes")}}'
+
+
+
   }
 ]
+
+
+
+
+
+
+
+
+
+
+

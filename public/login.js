@@ -12,8 +12,8 @@ function signInUser(username, password) {
          
 	$.ajax(settings).done(function (response) {
 			if (response.user) {
-				location.href = '/stationmap/;
-				alert("Inside signInUser response.user"+response.user);
+				location.href = '/myrides/';
+
 			}
 			else {
 				alert("Inside signInUser else part");
@@ -25,11 +25,13 @@ function signInUser(username, password) {
 
 function watchLogIn() {
 	$('.log-in-form').submit(function(event) {
+		alert("Inside login ");
 		event.preventDefault();
 		var username = $('#username').val();
 		var password = $('#password').val();
 		signInUser(username, password);
 	})
 }
+
 
 $(watchLogIn());

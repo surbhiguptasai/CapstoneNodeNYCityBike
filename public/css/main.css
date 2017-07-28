@@ -52,31 +52,83 @@ a {
 }
 
 .nav-items-wrap {
-	text-align: right;
+	text-align: right !important;;
 	
 }
 
 .nav-item1{
-	position: relative;
-	display: inline-block;
-	color: white;
-	padding-left: 50px;
+	position: relative !important;;
+	display: inline-block !important;;
+	color: white !important;
+	padding-left: 50px 	!important; ;
+
 }
 
 .nav-item{
-	position: relative;
-	display: inline-block;
-	line-height: 40px;
-	color: #a9a9a9;
-	padding-left: 50px;
+	position: relative !important; ;
+	display: inline-block !important;;
+	line-height: 40px !important;;
+	color: #a9a9a9 !important;;
+	padding-left: 50px !important;;
 }
 
 .nav-item a {
-	color: white;
+	color: white !important;;
 }
 .nav-item a:hover {
-	color: white;
+	color: white !important;;
 }
+/*.nav-item-dropdown*/
+/*{*/
+	/*display:none;*/
+/*}*/
+.dropdown-menu>li>a {
+	display: block !important;;
+	padding: 0px 10px !important;;
+	clear: both !important;;
+	font-weight: 400 !important;;
+	/*line-height: 1.42857143;*/
+	color: white !important;;
+	white-space: nowrap;
+}
+.dropdown:hover .dropdown-menu {
+	display: block !important;;
+}
+.dropdown-menu {
+	position: absolute !important;;
+	top: 100% !important;;
+	left: 0 !important;;
+	padding-left: -30px !important;;
+	/*z-index: 1000;*/
+	display: none !important;;
+	float: left !important;;
+
+	/*padding: 5px 0;*/
+	/*margin: 2px 0 0;*/
+	/*font-size: 14px;*/
+	/*text-align: left;*/
+	/*list-style: none;*/
+	background-color: black !important;;
+	/*-webkit-background-clip: padding-box;*/
+	/*background-clip: padding-box;*/
+	/*border: 1px solid #ccc;*/
+	/*border: 1px solid rgba(0,0,0,.15);*/
+	/*border-radius: 4px;*/
+	/*-webkit-box-shadow: 0 6px 12px rgba(0,0,0,.175);*/
+	/*box-shadow: 0 6px 12px rgba(0,0,0,.175);*/
+}
+.caret {
+	display: inline-block !important;;
+	width: 0 !important;;
+	height: 0 !important;;
+	margin-left: 2px !important;;
+	vertical-align: middle !important;;
+	border-top: 4px dashed !important;;
+	border-top: 4px solid\9 !important;;
+	border-right: 4px solid transparent !important;;
+	border-left: 4px solid transparent !important;;
+}
+
 
 .nav-button, .sign-up-form button, button#save, .plus-sign {
 	background-color: #66c470;
@@ -116,7 +168,7 @@ a {
 }
 
 main {
- 	padding-top: 60px;
+ 	/*padding-top: 60px;*/
 }
 
 .front-page {

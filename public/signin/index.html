@@ -10,7 +10,9 @@
   <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed:400i,700i" rel="stylesheet">
   <link rel="stylesheet" type="text/css" href="../css/float-grid.css">
   <link rel="stylesheet" type="text/css" href="../css/main.css"> 
-  <link rel="stylesheet" type="text/css" href="../css/howitworks.css"> 
+
+  <link href="../css/login.css" rel="stylesheet" type="text/css" />
+  <link rel="stylesheet" type="text/css" href="../css/howitworks.css">
 </head>
 <body>
 
@@ -22,34 +24,56 @@
         <div class="x">&#735;</div>
       </div>
       <div class="nav-items-wrap">
-        <div class="nav-item js-howitworks" title="How it Works"><a href="">How it Works</a></div>
-
         <div class="nav-item js-demo" title="Station Map"><a href="">Station Map</a></div>
-        <div class="nav-item js-explorenyc" title="How it Works"><a href="">Explore NYC</a></div>
+        <div class="nav-item js-my-rides" title="My Rides"><a href="">My Rides</a></div>
 
-        <div class="nav-item js-signup" title="sign up"><a href="#sign-up">Sign up</a></div>
-        <div class="nav-item js-signin" title="sign in"><div class="nav-button" ><a href="#sign-in"><div >Sign in</div></a></div> </div>
+
+        <div class="nav-item js-howitworks" title="How it Works">
+          <a href="">How it Works</a> </div>
+
+
+        <div class="nav-item js-explorenyc" title="Explore NYC"><a href="">Explore NYC</a></div>
+        <div class="nav-item" id="loggedinUser"></div>
+
+        <li class="dropdown nav-item js-signin"><a class="dropdown-toggle" href="#sign-in">Login <span class="caret"></span></a>
+
+          <ul class="dropdown-menu">
+            <li class="nav-item nav-item-d js-signin"><a  href="#sign-in">Sign in </a>
+
+            <li class="nav-item nav-item-d js-signup"><a href="#sign-up">Sign up</a></li>
+
+            <li class="nav-item nav-item-d "><a href="../users/logout" title="Sign out">Sign out</a></li>
+          </ul>
+        </li>
       </div>
     </div>
   </div>
 
-           <div id="sign-up">
-          <form class="sign-up-form" action="#">
-            <h2>Create an account</h2>
-            <label for="username">Username</label>
-            <input type="username" placeholder="your username" name="username" id="username" required>
-            <label for="password">Password</label>
-            <input type="password" name="password" id="password" required>
-            
-            <button type="submit">Login</button>
-            <div class="message-box">
-              <span class="js-message"></span>
-            </div>
-          </form>
-        </div>    
+  <div class="container">
+
+
+    <!--<a href="../"><header class="headingmargin">My Contacts</header></a>-->
+
+
+    <main>
+      <form class="log-in-form" action="" method="get">
+        <h1>Sign in to your account</h1>
+        <label for="username">Username</label>
+        <input type="username" placeholder="your username" name="username" id="username" required>
+        <label for="password">Password</label>
+        <input type="password" name="password" id="password" required>
+        <button type="submit">Sign in</button>
+        <div class="message-box">
+					<span>No account? <a href="#" class="js-signup">Sign up</a>, or try <a href="#" class="js-demo">the Demo</a><br />
+					<span class="js-error-message"></span>
+        </div>
+      </form>
+    </main>
+  </div>
+
         <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
-  <script src="../../menu.js"></script>
-  <script src="../../check-login-status.js"></script>
+
   <script src="../../sign-up.js"></script>
+  <script src="../../login.js"></script>
   </body>
 </html>

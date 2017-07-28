@@ -30,7 +30,7 @@
     width: 100%;
     border-bottom: 1px solid #d4d4d4;
     padding: 10px;
-    background-color: #cedbef;
+    background-color: #c7f441;
     z-index: 1;
 
 
@@ -142,6 +142,10 @@ h1,h6{
 
 
 }
+.padding0
+{
+    padding-right:0px;
+}
 .nav
 {
     clear:both;
@@ -219,13 +223,12 @@ button{
 
 }
 .modal-content {
-    background-image: url("../img/bankBG5.jpg");
+    /*background-image: url("../img/bankBG5.jpg");*/
         width: 50%;
     margin-left: 25%;
 }
-.form1{
-    margin-top: 55px;
-}
+
+
 
 .results{
     margin-top: 80px;
@@ -426,6 +429,38 @@ padding-left: 0px;
     only screen and (min-width: 760px)
   
     {
+
+
+    .form1
+    {
+        background-color: #c7f441 !important;
+    }
+    .form1:after{
+        background-color: #c7f441 !important;
+        /*position:absolute;*/
+        content:"";
+        left:0;
+        right:0;
+        height:10px;
+        top:80px;
+
+
+    }
+    .form1:before{
+        background-color: #c7f441 !important;
+        /*position:absolute;*/
+        content:"";
+        left:0;
+        right:0;
+        height:34px;
+        top:110px;
+
+
+    }
+    .form1{
+
+        background-color:yellow;
+    }
         #logoImg{
             margin:0px;
 
