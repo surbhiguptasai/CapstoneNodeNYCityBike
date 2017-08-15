@@ -239,11 +239,9 @@ main {
 }
 
 #sign-up {
-	text-align: center;
-	
-	padding: 95px 0 25px 0;
-	width: 45%;
-	margin-left:35%;
+	max-width: 400px;
+	margin-left: auto;
+	margin-right: auto;
 }
 
 .sign-up-form {
@@ -975,13 +973,27 @@ footer {
 
 }
 
-@media only screen and (min-width: 601px) {
+@media only screen and (min-width: 801px) {
 	.nav-items-wrap {
 		display: block !important; /* to override jquery inline `display: none` if browser resized while burger menu closed */
+
+	}
+	.nav-item {
+		padding-left: 10px !important;
 	}
 }
 
-@media only screen and (max-width: 600px) {
+@media only screen and (min-width: 900px) {
+	.nav-items-wrap {
+		display: block !important; /* to override jquery inline `display: none` if browser resized while burger menu closed */
+
+	}
+	.nav-item {
+		padding-left: 50px !important;
+	}
+}
+
+@media only screen and (max-width: 800px) {
 
 	.burger-container {
 		display: block;

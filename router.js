@@ -12,17 +12,17 @@ router.use(jsonParser);
 
 const basicStrategy = new BasicStrategy((username, password, callback) => {
 	let user;
-	console.log("Inside basic srategy");
+
 	UserContact
 		.findOne({userId: username})
 		.exec()
 		.then(_user => {
-			console.log("Inside User validation"+_user);
+
 			user = _user;
 			if (!user) {
 				return callback(null, false, {message: 'Incorrect username'});
 			}
-			console.log("user.validatePassword(password)"+user.validatePassword(password));
+
 			return user.validatePassword(password);
 		})
 		.then(isValid => {
@@ -69,15 +69,14 @@ function loggedIn(req, res, next) {
 router.get('/login',
 	passport.authenticate('basic', {session: true, failureRedirect: '/signin.html'}),
 		(req, res) => {
-			console.log("Inside login router"+req.user);
+
 			res.json({user: req.user.apiRepr(), message: 'Sign in successful'});
 		}
 );
 
 // GET for user session (protected, must be signed-in already and have session cookie)
 router.get('/me', loggedIn, (req, res, next) => {
-	console.log("Inside me"+req.user);
-	console.log("Inside me"+req.user.apiRepr());
+
   	res.json({user: req.user.apiRepr()});
 	}
 );
@@ -126,13 +125,13 @@ router.post('/sign-up', (req, res) => {
 		return res.status(422).json({message: 'Incorrect field length: password'});
 	}
 
-console.log("Inside Sign up page")
+
 UserContact
 		.find({"userId" : username})
 		.count()
 		.exec()
 		.then(count => {
-			console.log("Inside count is "+count);
+
 			if (count > 0) {
 				return res.status(422).json({message: 'Username already taken'});
 			}
@@ -218,7 +217,7 @@ router.put('/me/username', loggedIn, (req, res) => {
 
 // DELETE user account (password protected, must have session cookie)
 router.delete('/me', loggedIn, (req, res) => {
-	User
+    UserContact
 		.findByIdAndRemove(req.user.id)
 		.then(user => res.status(200).json({redirect: '/'}).end())
 		.catch(err => res.status(500).json({message: 'Internal server error'}));

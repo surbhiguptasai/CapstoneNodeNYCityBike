@@ -13,12 +13,17 @@ https://gbfs.citibikenyc.com/gbfs/gbfs.json
 {"name":"station_information","url":"https://gbfs.citibikenyc.com/gbfs/en/station_information.json"},
 
 {"name":"system_information","url":"https://gbfs.citibikenyc.com/gbfs/en/system_information.json"}]}}}
+mongod --dbpath C:\\Users\\ravindra\\Desktop\\Thinkful-Projects\\data\\db --->To start your local Mongo server
+
 
 AIzaSyDFd-29p6LxJ3sq0PIcgLFSB28vPOs9LpM
 
 capstone-nycbike-app
 
 mongoimport --db capstone-nycbike-app --collection userContacts --drop --file C:\\Users\\ravindra\\Desktop\\Thinkful-Projects\\React-Surbhi\\redux\\CapstoneNodeNYCityBike\\seed-data1.json --jsonArray
+
+
+mongoimport --db capstone-nycbike-app --collection userContacts --drop --file C:\\Users\\ravindra\\Desktop\\Thinkful-Projects\\React-Surbhi\\redux\\CapstoneNodeNYCityBike\\seed-data1.json --host ds145659.mlab.com --port 45659  -u surbhi -p surbhi
 
 
 mongoimport --db capstone-nycbike-app --collection userDetails --drop --file C:\\Users\\ravindra\\Desktop\\Thinkful-Projects\\React-Surbhi\\redux\\CapstoneNodeNYCityBike\\seed-data1.json --host ds145659.mlab.com --port 45659  -u surbhi -p surbhi

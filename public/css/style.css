@@ -352,7 +352,7 @@ padding-left: 0px;
 }
     @media only screen
     and (min-device-width : 320px)
-    and (max-device-width : 480px) {
+    {
         .results
         {
             padding-right: 5px !important;
@@ -394,7 +394,7 @@ padding-left: 0px;
         }
         .tabulator-cell { 
 
-            width:200px !important;
+            /*width:200px !important;*/
             height:auto !important;
             
 

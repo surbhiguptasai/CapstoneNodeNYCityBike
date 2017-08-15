@@ -24,6 +24,8 @@ app.use('/spin', express.static(__dirname + '/node_modules/spin/'));
 app.use('/moment', express.static(__dirname + '/node_modules/moment/'));
 app.use(morgan('common'));
 app.use('/users', usersRouter);
+app.set('view engine', 'ejs');
+
 
 
 
@@ -71,7 +73,7 @@ res.status(500).json({error: 'Something went wrong'});
 
 app.put('/rides/:id', (req, res) => {
 
-    console.log("Inside Put ********");
+
     // ensure that the id in the request path and the one in request body match
     if (!(req.params.id && req.body.id && req.params.id === req.body.id)) {
     const message = (
@@ -119,7 +121,7 @@ UserContact.find({"userId" : req.body.userId}, function (err, users){
 
 
 app.delete('/rides/:id', (req, res) => {
-    console.log("Inside Delete ********");
+
     UserContact.find({"userId" : req.body.userId}, function (err, users) {
     if (!err) {
         //we can remove a user by Id rather than looping over an array
