@@ -30,3 +30,5 @@ mongoimport --db capstone-nycbike-app --collection userDetails --drop --file C:\
 
 db.userContacts.find().pretty()
 
+C:\\Users\\ravindra\\Desktop\\Thinkful-Projects\\React-Surbhi\\redux\\CapstoneNodeNYCityBike
+

@@ -1,10 +1,10 @@
-# NYC CityBike #
+<h1>NYC CityBike</h1>
 
-NYCCityBike app allows user to find and manage a bike rides. 
-It provides real time information about available bikes and docking stations in NYC leveraging information from public API.
+<p><a href="https://capstonenodenycitybike.herokuapp.com/">NYCCityBike</a> app allows user to find and manage a bike rides. </p>
+<p>It provides real time information about available bikes and docking stations in NYC leveraging information from public API.</p>
 
-Live version: [https://capstonenodenycitybike.herokuapp.com/](https://capstonenodenycitybike.herokuapp.com/)
-(free hosting and server sleeps, so may take a few seconds to wake up)
+<img src="public/img/nycbikeAppF.png">
+
 ## Features ##
 
 Users can:
@@ -18,9 +18,45 @@ Users can:
 - Get information about various places of interest for bike ride as well as for tourism purposes.
 
 
-## Screenshots ##
+## Getting started
+### Installing
+```
+>   git clone https://github.com/surbhiguptasai/CapstoneNodeNYCityBike.git
+>   cd CapstoneNodeNYCityBike
+>   npm install
+```
+### Launching
+```
+>   npm start
+```
+Then open [`localhost:8000`](http://localhost:8080) in a browser.
+### Testing
+```
+>   npm run test
+```
 
-![](https://github.com/surbhiguptasai/portfolio/blob/master/images/nycbikeR2.jpg)
+<h2>Mockups</h2>
+<p>Initial wireframes were created for each page. Mockups of all key processes were designed with user flow in mind.</p>
+<img src="public/img/nycbikeApp-mockup.png">
+
+
+<h2>Technology</h2>
+<ul>
+  <li>HTML5</li>
+  <li>CSS3</li>
+  <li>Bootstrap</li>
+  <li>JavaScript</li>
+  <li>jQuery</li>
+  <li>Ajax</li>
+  <li>NodeJS</li>
+  <li>MongoDB</li>
+   <li>React</li>
+  <li>Chai</li>
+   <li>Mocha</li>
+</ul>
+<img src="public/img/nycbikeApp-tech.png">
+
+
 
 ## Users API ##
 
@@ -95,10 +131,9 @@ root path: /users
         - required in req body: {id: String}
         - returns updated user data (see '/me' GET for format)
 
-
-## Tech ##
-
-Back end: Node.js and Express with Mongo database and Mongoose; Mocha and Chai for testing
-
-Front end: jQuery,  HTML5, CSS, and React
+<h3>Responsive</h3>
+<ul>
+  <li>The app is fully responsive and quickly adapts to all mobile, tablet, and desktop viewports.</li>
+</ul>
+<img src="public/img/nycbikeR2.png">
 
