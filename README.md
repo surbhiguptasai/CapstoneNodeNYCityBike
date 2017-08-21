@@ -3,7 +3,7 @@
 <p><a href="https://capstonenodenycitybike.herokuapp.com/">NYCCityBike</a> app allows user to find and manage a bike rides. </p>
 <p>It provides real time information about available bikes and docking stations in NYC leveraging information from public API.</p>
 
-<img src="public/img/nycbikeAppF.png">
+<img src="public/img/nycbikeC1.png">
 
 ## Features ##
 
