@@ -250,11 +250,19 @@ function attachSubmitEvent()
 function attachDeleteEvent()
 {
     $("#delete-row").click(function(event) {
+        if(data1.length==0)
+          {
+              alert("Please Select Contact by clicking it");
+
+          }
         for(i=0;i<data1.length;i++)
         {
 
             makeDeleteAjaxCall();
+
         }
+         if(data1.length!=0)
+          alert("Contact Deleted Successfully!!");
         data1=[];
     });
 
@@ -268,6 +276,7 @@ function attachSaveUserEvent()
 
             makePutAjaxCall(dataEdited[i]);
         }
+        alert("Contact Saved Successfully!!");
         dataEdited=[];
     });
 

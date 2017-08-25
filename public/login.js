@@ -25,7 +25,6 @@ function signInUser(username, password) {
 
 function watchLogIn() {
 	$('.log-in-form').submit(function(event) {
-		alert("Inside login ");
 		event.preventDefault();
 		var username = $('#username').val();
 		var password = $('#password').val();
