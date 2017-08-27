@@ -39,7 +39,7 @@ Then open [`localhost:8000`](http://localhost:8080) in a browser.
 
 <h2>WireFrames</h2>
 <p>Initial wireframes were created for each page. Mockups of all key processes were designed with user flow in mind.</p>
-<img style="margin-left: 100px;" src="public/img/NYCBike-wireframe.png">
+<img style="margin-left:100px;" src="public/img/NYCBike-wireframe.png">
 
 
 <h2>Technology</h2>
@@ -56,11 +56,6 @@ Then open [`localhost:8000`](http://localhost:8080) in a browser.
   <li>Chai</li>
    <li>Mocha</li>
 </ul>
-
-
-
-
-
 <h3>Responsive</h3>
 <ul>
   <p>The app is fully responsive and quickly adapts to all mobile, tablet, and desktop viewports.</p>
