@@ -39,7 +39,7 @@ Then open [`localhost:8000`](http://localhost:8080) in a browser.
 
 <h2>WireFrames</h2>
 <p>Initial wireframes were created for each page. Mockups of all key processes were designed with user flow in mind.</p>
-<img style="margin-left:100px;" src="public/img/NYCBike-wireframe.png">
+<p align="center"><img src="public/img/NYCBike-wireframe.png"></p>
 
 
 <h2>Technology</h2>
