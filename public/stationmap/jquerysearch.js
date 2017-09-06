@@ -272,10 +272,10 @@ function createMap() {
     radius: 1000,
     map: map,
 
-    strokeColor: '#4cf441',
+    strokeColor: 'grey',
             strokeOpacity: 0.8,
             strokeWeight: 2,
-            fillColor: '#4cf441',
+            fillColor: 'grey',
             fillOpacity: 0.8,
 });
   }
