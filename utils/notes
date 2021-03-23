@@ -32,3 +32,16 @@ db.userContacts.find().pretty()
 
 C:\\Users\\ravindra\\Desktop\\Thinkful-Projects\\React-Surbhi\\redux\\CapstoneNodeNYCityBike
 
+/rides/add
+/rides/:id
+/rides/:id
+/rides
+/login
+/me
+/logout
+/sign-up
+/users
+/me/username
+/me
+
+
