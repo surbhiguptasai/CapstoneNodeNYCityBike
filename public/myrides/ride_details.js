@@ -3,9 +3,9 @@ var data1=[];
 var dataToBedisplayed=[];
 var queryString = {};
 var addUserQueryString = {};
-var baseUrl="http://localhost:8080/";
+//var baseUrl="http://localhost:8080/";
 var myURL="https://gbfs.citibikenyc.com/gbfs/en/station_information.json";
-//var baseUrl="https://capstonenodenycitybike.herokuapp.com/";
+var baseUrl="https://capstonenodenycitybike.herokuapp.com/";
 var baseUserUrl=baseUrl+"rides/";
 var DASH_USER = {};
 
