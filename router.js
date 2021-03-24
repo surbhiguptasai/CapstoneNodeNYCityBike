@@ -69,7 +69,6 @@ function loggedIn(req, res, next) {
 router.get('/login',
 	passport.authenticate('basic', {session: true, failureRedirect: '/signin.html'}),
 		(req, res) => {
-
 			res.json({user: req.user.apiRepr(), message: 'Sign in successful'});
 		}
 );
@@ -83,7 +82,7 @@ router.get('/me', loggedIn, (req, res, next) => {
 
 // GET for user to sign out
 router.get('/logout', (req, res) => {
-    console.log("Log out called");
+router.get('/logout', (req, res) => {
 	req.session.destroy(function (err) {
   		res.redirect('/');
   	});

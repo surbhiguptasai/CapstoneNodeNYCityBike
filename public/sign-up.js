@@ -45,6 +45,7 @@ function signInUser(username, password) {
 }
 
 function signInDemoUser(username, password) {
+
 	var settings = {
 	  url: "../users/login",
 	  method: "GET",
@@ -55,6 +56,7 @@ function signInDemoUser(username, password) {
 	};
 
 	$.ajax(settings).done(function (response) {
+
 			if (response.user) {
 				location.href = '/myrides/';
 			}
@@ -62,14 +64,17 @@ function signInDemoUser(username, password) {
 				$('.js-message').html('Server error.');
 			}
 	});
+
 }
 
 function watchDemoClick() {
 	$('.js-demo').click(function(event) {
-		
+
+	console.log("Demo clicked ***********")
 		event.preventDefault();
-		event.stopPropagation();
+//		event.stopPropagation();
         createNewDemoUser();
+        event.stopPropagation();
 		location.href = '/stationmap/';
 	})
 	$('.js-howitworks').click(function(event) {

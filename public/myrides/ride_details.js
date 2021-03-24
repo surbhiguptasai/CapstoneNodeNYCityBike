@@ -3,6 +3,7 @@ var data1=[];
 var dataToBedisplayed=[];
 var queryString = {};
 var addUserQueryString = {};
+
 //var baseUrl="http://localhost:8080/";
 var myURL="https://gbfs.citibikenyc.com/gbfs/en/station_information.json";
 var baseUrl="https://capstonenodenycitybike.herokuapp.com/";
@@ -221,7 +222,7 @@ function makeGetAjaxCall(){
         dataType: 'json',                // <---update this
         data: queryString,
         success: function(result) {
-            console.log("results is *****"+result.rides)
+
             dataToBedisplayed=result.rides;
             showRideDetails();
 
