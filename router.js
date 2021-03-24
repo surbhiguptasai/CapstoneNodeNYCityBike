@@ -82,7 +82,6 @@ router.get('/me', loggedIn, (req, res, next) => {
 
 // GET for user to sign out
 router.get('/logout', (req, res) => {
-router.get('/logout', (req, res) => {
 	req.session.destroy(function (err) {
   		res.redirect('/');
   	});
